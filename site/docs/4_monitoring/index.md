@@ -214,3 +214,49 @@ Memory Efficiency: 25.00% of 400.00 MB
 
 This output provides an overall picture of how efficiently your job utilized the allocated resources, which can be crucial in optimizing your application for an HPC environment. The use of these commands will give you a good understanding of how your job is performing and where there might be room for improvement.
 
+## scontrol
+
+`scontrol` is a utility provided by SLURM for administrative tasks, but it also has several functions that can be useful for users. One of these is the ability to display detailed information about a specific job. For example:
+
+```bash
+scontrol show job 123456
+```
+
+This command will show a detailed description of the job with ID 123456, including the time it was submitted, its current state, the partition it's running in, the resources it's using, and many other details. 
+
+Here's a truncated example of what the output might look like:
+
+```bash
+JobId=123456 JobName=pi_estim
+   UserId=myuser(1000) GroupId=myuser(1000) MCS_label=N/A
+   Priority=4294901496 Nice=0 Account=(null) QOS=(null)
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   ...
+```
+
+Note: The output of `scontrol show job` is quite long and has been truncated for brevity. To see all the information, run this command yourself with one of your job IDs.
+
+## sinfo
+
+While `sinfo` is more typically used to display information about nodes and partitions, it can also be used to monitor the resources being used by jobs in real-time. For example:
+
+```bash
+sinfo -N -l
+```
+
+This command will display a long format list of all nodes, showing which nodes are allocated to which jobs, the state of each node, how much of its resources are being used, and other details. 
+
+Here's an example of what the output might look like:
+
+```bash
+Tue May 23 10:15:39 2023
+NODELIST   NODES PARTITION       STATE CPUS    S:C:T MEMORY TMP_DISK WEIGHT FEATURES REASON
+n0001          1  regular*   allocated   24   2:12:1  64000    48000      1   (null) none
+   JOBID PARTITION     NAME     USER ST       START        END  NODES NODELIST(REASON)
+  123456   regular pi_estim    myuser  R 10:15:39 10:17:39      1 n0001
+```
+
+In this example, you can see that node `n0001` is allocated to job 123456, which is currently running. 
+
+As always, remember to replace `123456` with your job ID and `myuser` with your username in these examples. And as always, the full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/).
