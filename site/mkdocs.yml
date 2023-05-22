@@ -2,6 +2,8 @@
 site_name: DIPC SLURM training 
 site_description: DIPC SLURM training
 site_author: DIPC SCC
+repo_url: https://github.com/dipc-cc/slurm-training
+
 
 # Copyright
 copyright: Copyright &copy; 2023 DIPC
