@@ -1,0 +1,3 @@
+# DIPC: SLURM training Session
+
+
