@@ -8,7 +8,7 @@ This course is structured as follows:
 
 | Topic                                       | Description                                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **Introduction**                            | The motivation for using SLURM in HPC environments.                                                                                         |
+| [**Introduction**](../1_introduction/index.md)                            | The motivation for using SLURM in HPC environments.                                                                                         |
 | **Workflow**                                | A typical workflow involving connection to the system, job preparation, and job submission.                                                |
 | **First Example**                           | An extensive example to illustrate the typical SLURM workflow, explained in detail.                                                        |
 | **Monitoring**                              | Detailed instructions for monitoring jobs in SLURM.                                                                                          |
