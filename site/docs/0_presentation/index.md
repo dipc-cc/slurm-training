@@ -24,7 +24,7 @@ This course is structured as follows:
 
 ## Venue
 
-This training session will be held remotely. Login details for the virtual session will be shared via email closer to the event.
+The training session will be held at the DIPC's main auditorium and simultaneously streamed live on Zoom for remote participants. Login details for the virtual session will be shared via email closer to the event. Please note that the number of seats at the auditorium is limited. If you wish to attend the session in person, please send an email to dipc-scc-training@dipc.org to reserve your spot. Reservations will be granted on a first-come-first-serve basis.
 
 ## Course Materials
 
@@ -41,4 +41,3 @@ The training session will be conducted as per the following schedule:
 | 11:00-11:45  | First Example, Monitoring and Wrap-up  |
 
 We look forward to an engaging and informative session ahead!
-
