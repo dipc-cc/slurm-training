@@ -1,0 +1,20 @@
+footer {
+    background-image: url('default.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.md-footer-nav,
+.md-footer-meta {
+    background: transparent;
+}
+
+header {
+    background-image: url('default.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.md-header-nav,
+.md-header-meta {
+    background: transparent;
+}
+

@@ -6,15 +6,17 @@ Welcome to the SLURM training session! We're thrilled to have you join us for th
 
 This course is structured as follows:
 
-1. **Introduction**: The motivation for using SLURM in HPC environments.
-2. **Workflow**: A typical workflow involving connection to the system, job preparation, and job submission.
-3. **First Example**: An extensive example to illustrate the typical SLURM workflow, explained in detail.
-4. **Monitoring**: Detailed instructions for monitoring jobs in SLURM.
-5. **Constraints**: An exploration of job scheduling, partitions, Quality of Service (QoS), and job priority.
-6. **Post-Run Operations**: Instructions for handling output files and analyzing job performance.
-7. **Further Examples**: Additional examples showcasing various features of SLURM.
-8. **Advanced Usage**: An exploration of job arrays, GNU Parallel, dependency chains, and other advanced SLURM features.
-9. **Wrap-Up**: A summary of the course content and additional resources.
+| Topic                                       | Description                                                                                                                                 |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| **Introduction**                            | The motivation for using SLURM in HPC environments.                                                                                         |
+| **Workflow**                                | A typical workflow involving connection to the system, job preparation, and job submission.                                                |
+| **First Example**                           | An extensive example to illustrate the typical SLURM workflow, explained in detail.                                                        |
+| **Monitoring**                              | Detailed instructions for monitoring jobs in SLURM.                                                                                          |
+| **Constraints**                             | An exploration of job scheduling, partitions, Quality of Service (QoS), and job priority.                                                    |
+| **Post-Run Operations**                     | Instructions for handling output files and analyzing job performance.                                                                        |
+| **Further Examples**                        | Additional examples showcasing various features of SLURM.                                                                                    |
+| **Advanced Usage**                          | An exploration of job arrays, GNU Parallel, dependency chains, and other advanced SLURM features.                                           |
+| **Wrap-Up**                                 | A summary of the course content and additional resources.                                                                                    |
 
 ## Meet the Speakers
 
