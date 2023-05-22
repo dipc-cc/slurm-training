@@ -88,16 +88,6 @@ Once you've written your batch script, you can submit it to SLURM using the `sba
 sbatch pi_estimation.sh
 ```
 
-SLURM also provides the `srun` command, which is used to run job steps interactively. A job step is an application running concurrently on a set of allocated nodes. In our script, we have multiple job steps each estimating π.
-
-Lastly, we have `salloc` command. This command is used to allocate resources for your job in real time. Typically this is used to allocate resources and start a shell, in which you type interactive commands. While `salloc` does not directly apply to our batch script, it's crucial for interactive work. Here's how you could use `salloc` to start an interactive shell with 4 CPUs for one hour:
-
-```bash
-salloc --ntasks=4 --time=60
-```
-
-Remember, understanding `sbatch`, `srun`, and `salloc` is fundamental for working effectively with SLURM. In the next sections, we will dive deeper into monitoring and controlling the jobs you submit to SLURM.
-
 Here are the explanations for each `SBATCH` directive used in our batch script:
 
 | Directive              | Explanation                                                                                                                 |
@@ -105,10 +95,8 @@ Here are the explanations for each `SBATCH` directive used in our batch script:
 | `--job-name=PiEstimation`  | Sets the name of the job. This name appears in the job listings, making it easier to manage jobs.                         |
 | `--output=pi_job.%j.out`  | Sets the name of the standard output file for the job. `%j` is replaced with the job ID.                                  |
 | `--error=pi_job.%j.err`   | Sets the name of the standard error file for the job. `%j` is replaced with the job ID.                                   |
-| `--nodes=1`                | Specifies that
-
- the job requires 1 node.                                                                                   |
-| `--ntasks-per-node=4`      | Specifies the number of tasks to be initiated on each node. In this case, we have 4 tasks per node.                        |
+| `--nodes=1`                | Specifies that the job requires 1 node.                                                                                   |
+| `--ntasks-per-node=4`      | Specifies the number of tasks to be initiated on each node. In this case, we have 4 tasks per node.                       |
 | `--time=01:00:00`          | Sets a limit on the total run time of the job. The job will be terminated if it runs longer than this limit.              |
 | `--mail-type=END,FAIL`     | Sends an email when the job ends or fails.                                                                                |
 | `--mail-user=your-email@example.com`  | Specifies the email address to receive job status updates.
