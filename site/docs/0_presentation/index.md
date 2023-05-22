@@ -9,14 +9,14 @@ This course is structured as follows:
 | Topic                                       | Description                                                                                                                                 |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | [**Introduction**](../1_introduction/index.md)                            | The motivation for using SLURM in HPC environments.                                                                                         |
-| **Workflow**                                | A typical workflow involving connection to the system, job preparation, and job submission.                                                |
-| **First Example**                           | An extensive example to illustrate the typical SLURM workflow, explained in detail.                                                        |
-| **Monitoring**                              | Detailed instructions for monitoring jobs in SLURM.                                                                                          |
-| **Constraints**                             | An exploration of job scheduling, partitions, Quality of Service (QoS), and job priority.                                                    |
-| **Post-Run Operations**                     | Instructions for handling output files and analyzing job performance.                                                                        |
-| **Further Examples**                        | Additional examples showcasing various features of SLURM.                                                                                    |
-| **Advanced Usage**                          | An exploration of job arrays, GNU Parallel, dependency chains, and other advanced SLURM features.                                           |
-| **Wrap-Up**                                 | A summary of the course content and additional resources.                                                                                    |
+| [**Workflow**](../2_workflow/index.md)                                | A typical workflow involving connection to the system, job preparation, and job submission.                                                |
+| [**First Example**](../3_first-example/index.md)                           | An extensive example to illustrate the typical SLURM workflow, explained in detail.                                                        |
+| [**Monitoring**](../4_monitoring/index.md)                              | Detailed instructions for monitoring jobs in SLURM.                                                                                          |
+| [**Constraints**](../5_constrains/index.md)                             | An exploration of job scheduling, partitions, Quality of Service (QoS), and job priority.                                                    |
+| [**Post-Run Operations**](../6_postrun/index.md)                     | Instructions for handling output files and analyzing job performance.                                                                        |
+| [**Further Examples**](../7_examples/index.md)                        | Additional examples showcasing various features of SLURM.                                                                                    |
+| [**Advanced Usage**](../8_advanced/index.md)                          | An exploration of job arrays, GNU Parallel, dependency chains, and other advanced SLURM features.                                           |
+| [**Wrap-Up**](../9_wrap-up/index.md)                                 | A summary of the course content and additional resources.                                                                                    |
 
 ## Meet the Speakers
 
