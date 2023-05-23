@@ -1,7 +1,6 @@
 ---
 title: Monitoring
 nav: true
-order: 4
 ---
 
 # Monitoring
