@@ -20,7 +20,17 @@ Fun!
 ## Contents:
 
 {% for lesson in site.pages %}
-{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | relative_url }}){% endif %}
+{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | relative_url }})
+-Introduction
+-Workflow
+-First-example
+-Monitoring
+-Constrains
+-Post-run
+-Examples
+-Advance
+-Wrap-Up
+{% endif %}
 {% endfor %}
 </div>
 
