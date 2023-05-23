@@ -1,7 +1,6 @@
 ---
 title: Constrains
 nav: true
-order: 5
 ---
 
 # Policies and constrains
