@@ -1,3 +1,8 @@
+---
+title: Post-run
+nav: true
+---
+
 # Post-Run Operations
 
 Once the work is finished we should move the generated data to our home directory under /dipc or to a local folder. This is done for two main reasons:
