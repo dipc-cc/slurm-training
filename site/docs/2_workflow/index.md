@@ -1,7 +1,6 @@
 ---
 title: Workflow
 nav: true
-order: 2
 ---
 
 # Workflow
