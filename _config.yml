@@ -16,7 +16,7 @@ keywords: "SLURM, HPC, ATLAS, HYPERION, DIPC"
 # author settings for cc-by, appears in the footer
 author: Iker Ortiz de Luzuriaga and Diego Lasa
 pub_year: 2023
-github_username: iortizdeluzu
+github_username: dipc-cc
 
 # add the full url for the github repository
 repo: "https://github.com/dipc-cc/slurm-training"
