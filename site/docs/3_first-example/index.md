@@ -1,3 +1,8 @@
+---
+title: First-example
+nav: true
+---
+
 # First Example: Estimation of the valur of Pi with Monte Carlo methods
 
 Before delving into the code, let's further explore the problem at hand. 
