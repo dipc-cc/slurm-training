@@ -1,3 +1,8 @@
+---
+title: Introduction
+nav: true
+---
+
 # Introduction
 
 In the modern era of research, High-Performance Computing (HPC) has emerged as a cornerstone, powering groundbreaking innovations and discoveries. It provides the robust computational capacity necessary for handling highly complex and data-intensive tasks. Whether it's climate modeling, genomic research, artificial intelligence, or particle physics, HPC is the engine driving these high-stake computations.
