@@ -19,10 +19,16 @@ Fun!
 <div class="toc" markdown="1">
 ## Contents:
 
-{% for lesson in site.pages %}
-{% if lesson.nav == true %}- [{{ lesson.title }}]({{ lesson.url | relative_url }}){% endif %}
+{% assign order = ["Introduction", "Workflow", "First-Example", "Monitoring", "Constraints", "Post-run", "Examples", "Advances", "Wrap-up"] %}
+
+{% for lesson_title in order %}
+  {% for lesson in site.pages %}
+    {% if lesson.nav == true and lesson.title == lesson_title %}
+      - [{{ lesson.title }}]({{ lesson.url | relative_url }})
+    {% endif %}
+  {% endfor %}
 {% endfor %}
-</div>
+
 
 Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
 
