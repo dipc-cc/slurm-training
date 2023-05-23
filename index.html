@@ -19,15 +19,12 @@ Fun!
 <div class="toc" markdown="1">
 ## Contents:
 
-{% assign order = ["Introduction", "Workflow", "First-Example", "Monitoring", "Constrains", "Post-run", "Examples", "Advanced", "Wrap-Up"] %}
+{% assign ordered_lessons = site.pages | where: "nav", true | sort: "order" %}
 
-{% for lesson_title in order %}
-  {% for lesson in site.pages %}
-    {% if lesson.nav == true and lesson.title == lesson_title %}
-      - [{{ lesson.title }}]({{ lesson.url | relative_url }})
-    {% endif %}
-  {% endfor %}
+{% for lesson in ordered_lessons %}
+- [{{ lesson.title }}]({{ lesson.url | relative_url }})
 {% endfor %}
+
 
 
 Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
