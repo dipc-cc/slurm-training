@@ -1,7 +1,6 @@
 ---
 title: Introduction
 nav: true
-order: 1
 ---
 
 # Introduction
