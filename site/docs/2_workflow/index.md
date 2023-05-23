@@ -1,3 +1,8 @@
+---
+title: Workflow
+nav: true
+---
+
 # Workflow
 
 The typical workflow of a researcher using SLURM in an HPC environment involves several steps:
