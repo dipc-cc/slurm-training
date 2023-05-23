@@ -1,6 +1,7 @@
 ---
 title: First-example
 nav: true
+order: 3
 ---
 
 # First Example: Estimation of the valur of Pi with Monte Carlo methods
