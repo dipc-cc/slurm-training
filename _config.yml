@@ -1,0 +1,45 @@
+# Jekyll workshop-template evanwill
+# https://github.com/evanwill/workshop-template
+# based on minima theme https://github.com/jekyll/minima
+
+# Notes: 
+# - pages with "nav: true" in front matter will be in header nav
+# - figure include for centered images, put file in images directory and use: {% include figure.html img="my-cat.jpg" alt="cat" caption="My cat" width="50%" %}
+
+# Site settings
+# title appears in the header
+title: Slurm training course
+# description and keywords for meta tags
+description: "SLURM Training Course, providing a comprehensive guide to utilizing SLURM for effective job scheduling and management in High-Performance Computing (HPC) at DIPC. "
+keywords: "SLURM, HPC, ATLAS, HYPERION, DIPC"
+
+# author settings for cc-by, appears in the footer
+author: Iker Ortiz de Luzuriaga and Diego Lasa
+pub_year: 2023
+github_username: iortizdeluzu
+
+# add the full url for the github repository
+repo: "https://github.com/dipc-cc/slurm-training"
+
+# site urls
+# add the url for the domain,
+# on gh-pages follow the pattern: https://username.github.io 
+url: https://dipc-cc.github.io
+# add subsection of the domain,
+# on gh-pages this is a / followed by the name of the repository
+baseurl: /slurm-training
+
+# add google analytics if desired (optional)
+# if blank, it will be ignored
+# use JEKYLL_ENV=production on build command
+google-analytics-id: 
+
+# defaults (to simplify front matter)
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Build settings
+markdown: kramdown
