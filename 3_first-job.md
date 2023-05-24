@@ -26,15 +26,13 @@ In this case, we'll be using the Monte Carlo method to estimate the value of π.
 </div>
 
 <br> <!-- Blank line -->
-1. <div align="justify">
- **Create a bounded area**: Imagine a square with a side length of 1 unit. Now, inscribe a quarter-circle with a radius of 1 unit inside this square, like a pie wedge.
-</div>
+1. **Create a bounded area**: Imagine a square with a side length of 1 unit. Now, inscribe a quarter-circle with a radius of 1 unit inside this square, like a pie wedge.
 
-2. <div align="justify"> **Throw darts**: We then "throw darts" at this square. The position (x, y) of each dart is determined randomly.</div>
+2. **Throw darts**: We then "throw darts" at this square. The position (x, y) of each dart is determined randomly.
 
-3. <div align="justify"> **Determine if the dart is inside the quarter-circle**: For each dart, we compute whether it has landed inside the quarter-circle using the equation of a circle (x^2 + y^2 < r^2, where r is the radius). If the dart lands inside the circle (x^2 + y^2 < 1), we consider it a hit.</div>
+3. **Determine if the dart is inside the quarter-circle**: For each dart, we compute whether it has landed inside the quarter-circle using the equation of a circle (x^2 + y^2 < r^2, where r is the radius). If the dart lands inside the circle (x^2 + y^2 < 1), we consider it a hit.
 
-4. <div align="justify"> **Approximate π**: We do this thousands or even millions of times. The ratio of the number of darts that hit inside the circle to the total number of darts thrown will approximately be π/4. </div>
+4. **Approximate π**: We do this thousands or even millions of times. The ratio of the number of darts that hit inside the circle to the total number of darts thrown will approximately be π/4. 
 
 So, by multiplying this ratio by 4, we can approximate π!
 
