@@ -9,6 +9,26 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
 
 
 
+div.special_table + table, th, td {
+  border: 1px solid black;
+}
+"""
+
+pn.extension(raw_css=[css])
+
+SimpleTable = pn.panel("""
+<div class="special_table"></div>
+
+|     Time    | Number of Trial with Results | Unique Units |
+|:-----------:|:----------------------------:|:------------:|
+| 20 Apr 2018 |            30,763            |    21,094    |
+|  7 Feb 2019 |            34,751            |    23,733    |
+| 12 Apr 2019 |            35,926            |    24,548    |
+|             |                              |              |
+
+""")
+
+
 | QoS/Partition | Priority | MaxWall      | MaxNodesPU | MaxJobsPU   | MaxSubmitPU | MaxTRES                    |
 |---------------|----------|--------------|------------|-------------|-------------|----------------------------|
 | regular       | 200      |  1-00:00:00  | 24         |  50         |             |                            |
