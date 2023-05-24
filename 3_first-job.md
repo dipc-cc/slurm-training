@@ -8,7 +8,7 @@ nav: true
 <div align="justify">
 Before delving into the code, let's further explore the problem at hand. 
 
-Pi (<code>$\pi$</code>) is a mathematical constant originally defined as the ratio of a circle's circumference to its diameter. It's a fundamental element in mathematics and appears in many formulas in all areas of mathematics and physics.
+Pi (π) is a mathematical constant originally defined as the ratio of a circle's circumference to its diameter. It's a fundamental element in mathematics and appears in many formulas in all areas of mathematics and physics.
 
 However, π is an irrational number, meaning it cannot be expressed as a simple fraction, and its decimal representation never ends or settles into a permanently repeating pattern. Although we usually approximate π as 3.14159, its exact value is unknown.
 
@@ -43,14 +43,14 @@ Now, this process is inherently parallel — each "dart throw" is an independent
 
 <div style="text-align: justify;">
 In the example script, we'll be generating these "random dart throws" using the Bash <code>$RANDOM</code> variable and then estimating π in parallel tasks. By submitting this task to SLURM, we'll effectively be demonstrating a simple, yet powerful use case of HPC.
-</div>
 
 
-Absolutely, we can integrate the use of `sbatch`, `salloc`, and `srun` into the Monte Carlo Pi estimation example. Here's the revised section:
+Absolutely, we can integrate the use of <code>sbatch</code>, <code>salloc</code>, and <code>srun</code> into the Monte Carlo Pi estimation example. Here's the revised section:
 
 ## Sample Batch Script
 
-First, let's examine the SLURM batch script. We'll name our batch script `pi_estimation.sh`. It's important to note that the batch script is the primary way to submit jobs to the SLURM scheduler, and we submit this script using the `sbatch` command.
+First, let's examine the SLURM batch script. We'll name our batch script <code>pi_estimation.sh</code>. It's important to note that the batch script is the primary way to submit jobs to the SLURM scheduler, and we submit this script using the `sbatch` command.
+</div>
 
 ```bash
 #!/bin/bash
@@ -99,8 +99,9 @@ done
 # Wait for all background tasks to finish
 wait
 ```
-
-Once you've written your batch script, you can submit it to SLURM using the `sbatch` command. The `sbatch` command reads a script file and submits the script as a job to SLURM. The script contains both the job parameters, specified on lines beginning with `#SBATCH`, and the job commands.
+<div align="justify">
+Once you've written your batch script, you can submit it to SLURM using the <code>sbatch</code> command. The <code>sbatch</code> command reads a script file and submits the script as a job to SLURM. The script contains both the job parameters, specified on lines beginning with <code>#SBATCH</code>, and the job commands.
+</div>
 
 ```bash
 sbatch pi_estimation.sh
@@ -121,40 +122,43 @@ Here are the explanations for each `SBATCH` directive used in our batch script:
 
 
 <br> <!-- Blank line -->
-Remember that all `SBATCH` directives must come before any executable line in your script. 
+<div align="justify">
+Remember that all <code>SBATCH</code> directives must come before any executable line in your script. 
 
 This batch script generates four parallel tasks, each performing a million trials to estimate the value of Pi. It demonstrates both the basic usage of SLURM and the application of parallel processing in solving computationally intensive problems. 
 
-To submit this job script to SLURM, we would use the `sbatch` command:
+To submit this job script to SLURM, we would use the <code>sbatch</code> command:
 
 ```bash
 sbatch pi_estimation.sh
 ```
-
+<div align="justify">
 This script, as well as subsequent outputs, error logs, and other relevant files, will be used throughout this course as we delve deeper into the powerful features of SLURM.
 
 
 ## Interactive job with salloc
 
-In some cases, you might want to run your jobs interactively, that is, get a shell on a compute node where you can type commands and run programs directly. This can be done using `salloc`.
+In some cases, you might want to run your jobs interactively, that is, get a shell on a compute node where you can type commands and run programs directly. This can be done using <code>salloc</code>.
 
-Here's how you could use `salloc` to start an interactive shell with 4 CPUs for one hour, and then run the Pi estimation program interactively:
+Here's how you could use <code>salloc</code> to start an interactive shell with 4 CPUs for one hour, and then run the Pi estimation program interactively:
+</div>
 
 ```bash
 salloc --ntasks=4 --time=01:00:00
 bash pi_estimation.sh
 exit
 ```
-
-The `salloc` command allocates resources (in this case, 4 tasks for a duration of one hour) and starts a shell. In that shell, you can then directly execute the `pi_estimation.sh` script. Once you're done, don't forget to type `exit` to release the allocation.
+<div align="justify">
+The <code>salloc</code> command allocates resources (in this case, 4 tasks for a duration of one hour) and starts a shell. In that shell, you can then directly execute the <code>pi_estimation.sh</code> script. Once you're done, don't forget to type <code>exit</code> to release the allocation.
 
 ## Direct job step execution with srun
 
-`srun` is another important command in SLURM. It allows you to run job steps directly without having to write a batch script. A job step is essentially a set of (possibly multiple) tasks that are co-scheduled across one or more nodes.
+<code>srun</code> is another important command in SLURM. It allows you to run job steps directly without having to write a batch script. A job step is essentially a set of (possibly multiple) tasks that are co-scheduled across one or more nodes.
 
-In the context of our Pi estimation program, you could use `srun` to directly run the Pi estimation commands as a job step. However, as our script is a bit more complex (with loops and conditionals), it's not straightforward to do it with `srun` directly. Instead, we can wrap our core script into another script and then use `srun` to execute it:
+In the context of our Pi estimation program, you could use <code>srun</code> to directly run the Pi estimation commands as a job step. However, as our script is a bit more complex (with loops and conditionals), it's not straightforward to do it with <code>srun</code> directly. Instead, we can wrap our core script into another script and then use <code>srun</code> to execute it:
 
-First, extract the core logic of our Pi estimation into a separate script, `core_pi.sh`:
+First, extract the core logic of our Pi estimation into a separate script, <code>core_pi.sh</code>:
+</div>
 
 ```bash
 #!/bin/bash
@@ -188,6 +192,8 @@ Then, use `srun` to run this script as a job step, creating 4 tasks:
 srun --ntasks=4 --time=01:00:00 bash core_pi.sh
 ```
 
-Each of the 4 tasks will execute `core_pi.sh` separately, effectively running our Pi estimation in parallel.
+<div align="justify">
+Each of the 4 tasks will execute <code>core_pi.sh</code> separately, effectively running our Pi estimation in parallel.
 
-Remember, `srun` and `salloc` provide you with more flexibility and control over your job execution. You'll typically use `sbatch` for most of your jobs (especially long ones or ones that you want to schedule and forget), but `srun` and `salloc` can be very handy for quick or interactive jobs.
+Remember, <code>srun</code> and <code>salloc</code> provide you with more flexibility and control over your job execution. You'll typically use <code>sbatch</code> for most of your jobs (especially long ones or ones that you want to schedule and forget), but <code>srun</code> and <code>salloc</code> can be very handy for quick or interactive jobs.
+</div>
