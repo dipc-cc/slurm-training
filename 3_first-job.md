@@ -8,17 +8,20 @@ nav: true
 <div align="justify">
 Before delving into the code, let's further explore the problem at hand. 
 
-Pi (π) is a mathematical constant originally defined as the ratio of a circle's circumference to its diameter. It's a fundamental element in mathematics and appears in many formulas in all areas of mathematics and physics.
+Pi ($\pi$) is a mathematical constant originally defined as the ratio of a circle's circumference to its diameter. It's a fundamental element in mathematics and appears in many formulas in all areas of mathematics and physics.
 
-However, π is an irrational number, meaning it cannot be expressed as a simple fraction, and its decimal representation never ends or settles into a permanently repeating pattern. Although we usually approximate π as 3.14159, its exact value is unknown.
+However, $\pi$ is an irrational number, meaning it cannot be expressed as a simple fraction, and its decimal representation never ends or settles into a permanently repeating pattern. Although we usually approximate π as 3.14159, its exact value is unknown.
 
 So how can we estimate it using a computer program? That's where the Monte Carlo method comes in.
+</div>
 
 ## The Monte Carlo Method
 
+<div align="justify">
 The Monte Carlo method, named after the famous Monaco casino, is a statistical technique that uses random sampling to obtain numerical results. The underlying concept is to use randomness to solve problems that might be deterministic in principle.
 
 In this case, we'll be using the Monte Carlo method to estimate the value of π. Here's the idea:
+</div>
 
 1. **Create a bounded area**: Imagine a square with a side length of 1 unit. Now, inscribe a quarter-circle with a radius of 1 unit inside this square, like a pie wedge.
 
@@ -177,4 +180,3 @@ Each of the 4 tasks will execute `core_pi.sh` separately, effectively running ou
 
 Remember, `srun` and `salloc` provide you with more flexibility and control over your job execution. You'll typically use `sbatch` for most of your jobs (especially long ones or ones that you want to schedule and forget), but `srun` and `salloc` can be very handy for quick or interactive jobs.
 
-</div>

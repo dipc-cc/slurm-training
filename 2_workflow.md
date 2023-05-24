@@ -10,17 +10,18 @@ The typical workflow of a researcher using SLURM in an HPC environment involves 
 </div>
 <br> <!-- Blank line -->
 
-1. **Connect to the System**: Using Secure Shell (SSH), you connect to the login node of the HPC cluster.
+1. <div align="justify"> **Connect to the System**: Using Secure Shell (SSH), you connect to the login node of the HPC cluster. </div>
 
-2. **Prepare Your Work**: This might include copying input files, writing scripts, or compiling programs.
+2. <div align="justify"> **Prepare Your Work**: This might include copying input files, writing scripts, or compiling programs.</div>
 
-3. **Job Submission**: You write a batch script for SLURM that outlines the requirements and commands for your job, and submit this script to the scheduler.
+3. <div align="justify"> **Job Submission**: You write a batch script for SLURM that outlines the requirements and commands for your job, and submit this script to the scheduler.</div>
 
-4. **Monitor Your Job**: You can keep track of your job's progress using several SLURM commands.
+4. <div align="justify"> **Monitor Your Job**: You can keep track of your job's progress using several SLURM commands.</div>
 
-5. **Transfer Results**: Once your job is completed, you can copy your output files from the compute node back to your local system.
+5. <div align="justify"> **Transfer Results**: Once your job is completed, you can copy your output files from the compute node back to your local system.</div>
 
 <br> <!-- Blank line -->
 
-In the following sections, we will delve into each of these steps, starting with a detailed walkthrough of a simple example.
+<div align="justify">
+In the following sections, we will delve into each of these steps, starting with a detailed walkthrough of a simple example.</div>
 
