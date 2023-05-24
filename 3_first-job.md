@@ -118,7 +118,7 @@ sbatch pi_estimation.sh
 
 This script, as well as subsequent outputs, error logs, and other relevant files, will be used throughout this course as we delve deeper into the powerful features of SLURM.
 
-### Interactive job with salloc
+## Interactive job with salloc
 
 In some cases, you might want to run your jobs interactively, that is, get a shell on a compute node where you can type commands and run programs directly. This can be done using `salloc`.
 
@@ -132,7 +132,7 @@ exit
 
 The `salloc` command allocates resources (in this case, 4 tasks for a duration of one hour) and starts a shell. In that shell, you can then directly execute the `pi_estimation.sh` script. Once you're done, don't forget to type `exit` to release the allocation.
 
-### Direct job step execution with srun
+## Direct job step execution with srun
 
 `srun` is another important command in SLURM. It allows you to run job steps directly without having to write a batch script. A job step is essentially a set of (possibly multiple) tasks that are co-scheduled across one or more nodes.
 

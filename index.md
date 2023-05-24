@@ -3,7 +3,7 @@ title: Home
 ---
 
 
-{% include figure.html img="logo.png" alt="intro image here" caption="Library workshop" width="75%" %}
+{% include figure.html img="logo.png" alt="intro image here" width="45%"}
 
 
 # Hyperion and ATLAS usage training
