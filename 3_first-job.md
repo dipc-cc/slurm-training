@@ -42,7 +42,7 @@ Now, this process is inherently parallel — each "dart throw" is an independent
 
 
 <div style="text-align: justify;">
-In the example script, we'll be generating these "random dart throws" using the Bash `$RANDOM` variable and then estimating π in parallel tasks. By submitting this task to SLURM, we'll effectively be demonstrating a simple, yet powerful use case of HPC.
+In the example script, we'll be generating these "random dart throws" using the Bash <code>$RANDOM</code> variable and then estimating π in parallel tasks. By submitting this task to SLURM, we'll effectively be demonstrating a simple, yet powerful use case of HPC.
 </div>
 
 
