@@ -8,7 +8,7 @@ nav: true
 <div align="justify">
 Before delving into the code, let's further explore the problem at hand. 
 
-Pi (π) is a mathematical constant originally defined as the ratio of a circle's circumference to its diameter. It's a fundamental element in mathematics and appears in many formulas in all areas of mathematics and physics.
+Pi (<code>$\pi$</code>) is a mathematical constant originally defined as the ratio of a circle's circumference to its diameter. It's a fundamental element in mathematics and appears in many formulas in all areas of mathematics and physics.
 
 However, π is an irrational number, meaning it cannot be expressed as a simple fraction, and its decimal representation never ends or settles into a permanently repeating pattern. Although we usually approximate π as 3.14159, its exact value is unknown.
 
