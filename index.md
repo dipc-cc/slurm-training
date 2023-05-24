@@ -21,13 +21,7 @@ Welcome to the SLURM training session! We're thrilled to have you join us for th
 </div>
 
 
-## Meet the Speakers
-
  table {
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
 </head>
 <body>
     <h2>Meet the Speakers</h2>
