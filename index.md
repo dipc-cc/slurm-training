@@ -25,9 +25,9 @@ Welcome to the SLURM training session! We're thrilled to have you join us for th
 
 ## Meet the Speakers
 
-| ![Iker Ortiz de Luzuriaga](files/iker.png) | **Iker Ortiz de Luzuriaga**:<br>Iker is a recognized expert in HPC with years of experience in working with various job schedulers. His extensive knowledge and clear teaching style make complex topics easily understandable. |
+| ![Iker Ortiz de Luzuriaga]| **Iker Ortiz de Luzuriaga**:<br>Iker is a recognized expert in HPC with years of experience in working with various job schedulers. His extensive knowledge and clear teaching style make complex topics easily understandable. |
 |---|---|
-| ![Diego Lasa](files/diego.jpg) | **Diego Lasa**:<br>Diego brings his extensive hands-on experience with HPC systems to this course. His practical insights and tips will be invaluable for anyone starting their journey with SLURM. |
+| ![Diego Lasa]| **Diego Lasa**:<br>Diego brings his extensive hands-on experience with HPC systems to this course. His practical insights and tips will be invaluable for anyone starting their journey with SLURM. |
 
 
 ## Venue
