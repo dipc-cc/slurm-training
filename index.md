@@ -47,22 +47,26 @@ All the course materials, including the scripts used in the examples, will be ma
 
 The training session will be conducted as per the following schedule:
 
-| Time         | Event                                  |
-|--------------|----------------------------------------|
-| 10:00-10:45  | Introduction and Workflow              |
-| 10:45-11:00  | Coffee Break                           |
-| 11:00-11:45  | First Example, Monitoring and Wrap-up  |
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Event</th>
+    </tr>
+    <tr>
+        <td>10:00-10:45</td>
+        <td>Introduction and Workflow</td>
+    </tr>
+    <tr>
+        <td>10:45-11:00</td>
+        <td>Coffee Break</td>
+    </tr>
+    <tr>
+        <td>11:00-11:45</td>
+        <td>First Example, Monitoring and Wrap-up</td>
+    </tr>
+</table>
+
 
 We look forward to an engaging and informative session ahead!
 
 
-
-Hosted by [Dopnostia International Physics Center](https://dipc.ehu.eus/es), {{ site.pub_year }}.
-
-> built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
->
-> images and content: cc-by-sa <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> {{ site.pub_year}} (get [source code]({{ site.repo }})).
-> Last build date: {{ site.time | date: "%Y-%m-%d" }}.
->
-> <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license"><img style="border-width: 0;" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="Creative Commons License" /></a>
-~                                                                                           
