@@ -64,7 +64,7 @@ The training session will be conducted as per the following schedule:
 </table>
 
 
-
+<br> <!-- Blank line -->
 We look forward to an engaging and informative session ahead!
 
 
