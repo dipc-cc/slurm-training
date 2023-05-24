@@ -41,8 +41,9 @@ Now, this process is inherently parallel — each "dart throw" is an independent
 </div>
 
 
+<div style="text-align: justify;">
 In the example script, we'll be generating these "random dart throws" using the Bash `$RANDOM` variable and then estimating π in parallel tasks. By submitting this task to SLURM, we'll effectively be demonstrating a simple, yet powerful use case of HPC.
-
+</div>
 
 
 Absolutely, we can integrate the use of `sbatch`, `salloc`, and `srun` into the Monte Carlo Pi estimation example. Here's the revised section:
