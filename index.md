@@ -2,17 +2,14 @@
 title: Home
 ---
 
-# Workshop Template!
 
 {% include figure.html img="logo.png" alt="intro image here" caption="Library workshop" width="75%" %}
 
-A minimal Jekyll theme for creating workshop websites.
 
-*Add your workshop abstract here!*
+# Hyperion and ATLAS usage training
 
-Learn how to create a super quick easy website for a workshop by writing a few markdown files!
-Host it for free on GitHub with gh-pages, and share!
-Fun!
+Welcome to the SLURM training session! We're thrilled to have you join us for this exciting journey into the world of High-Performance Computing (HPC) using SLURM.
+
 
 *See also:* [workshop-template-b](https://evanwill.github.io/workshop-template-b/), Bootstrap version.
 
@@ -26,8 +23,36 @@ Fun!
 </div>
 
 
+## Meet the Speakers
 
-Hosted by [University of Idaho Library](http://www.lib.uidaho.edu/), {{ site.pub_year }}.
+| ![Iker Ortiz de Luzuriaga](files/iker.png) | **Iker Ortiz de Luzuriaga**:<br>Iker is a recognized expert in HPC with years of experience in working with various job schedulers. His extensive knowledge and clear teaching style make complex topics easily understandable. |
+|---|---|
+| ![Diego Lasa](files/diego.jpg) | **Diego Lasa**:<br>Diego brings his extensive hands-on experience with HPC systems to this course. His practical insights and tips will be invaluable for anyone starting their journey with SLURM. |
+
+
+## Venue
+
+The training session will be held at the DIPC's main auditorium and simultaneously streamed live on Zoom for remote participants. Login details for the virtual session will be shared via email closer to the event. Please note that the number of seats at the auditorium is limited. If you wish to attend the session in person, please send an email to dipc-scc-training@dipc.org to reserve your spot. Reservations will be granted on a first-come-first-serve basis.
+
+## Course Materials
+
+All the course materials, including the scripts used in the examples, will be made available on the course GitHub repository. We highly recommend cloning the repository and following along with the examples during the session.
+
+## Schedule
+
+The training session will be conducted as per the following schedule:
+
+| Time         | Event                                  |
+|--------------|----------------------------------------|
+| 10:00-10:45  | Introduction and Workflow              |
+| 10:45-11:00  | Coffee Break                           |
+| 11:00-11:45  | First Example, Monitoring and Wrap-up  |
+
+We look forward to an engaging and informative session ahead!
+
+
+
+Hosted by [Dopnostia International Physics Center](https://dipc.ehu.eus/es), {{ site.pub_year }}.
 
 > built using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
 >

@@ -8,7 +8,7 @@
 
 # Site settings
 # title appears in the header
-title: Slurm training course
+title: HPC resource usage training courses
 # description and keywords for meta tags
 description: "SLURM Training Course, providing a comprehensive guide to utilizing SLURM for effective job scheduling and management in High-Performance Computing (HPC) at DIPC. "
 keywords: "SLURM, HPC, ATLAS, HYPERION, DIPC"
