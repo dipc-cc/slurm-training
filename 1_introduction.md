@@ -5,6 +5,7 @@ nav: true
 
 # Introduction
 
+<div align="justify">
 In the modern era of research, High-Performance Computing (HPC) has emerged as a cornerstone, powering groundbreaking innovations and discoveries. It provides the robust computational capacity necessary for handling highly complex and data-intensive tasks. Whether it's climate modeling, genomic research, artificial intelligence, or particle physics, HPC is the engine driving these high-stake computations.
 
 However, to maximize the utility of an HPC system and ensure its resources are used efficiently, we require a mechanism that can manage, allocate, and schedule computational tasks. This is where workload managers, or job schedulers, step in.
@@ -25,9 +26,11 @@ In contrast, a workload manager automates these tasks and provides several signi
 2. **Fairness**: It manages job priorities based on factors such as user quotas and job sizes, ensuring that all users get their fair share of the system resources.
 3. **Ease of Use**: It provides users with commands to submit jobs, check their status, and cancel them if necessary. This makes it much easier for users to interact with the HPC system.
 4. **Flexibility**: It allows system administrators to implement policies that govern job priorities, system utilization, and resource allocation, providing a high degree of control over the system's operation.
+</div>
 
 ## Why SLURM?
 
+<div align="justify">
 Among the plethora of workload managers, SLURM (Simple Linux Utility for Resource Management) stands out and is widely adopted in the HPC community. 
 
 Here are the compelling reasons for choosing SLURM:
@@ -39,4 +42,4 @@ Here are the compelling reasons for choosing SLURM:
 5. **Robustness and Reliability**: SLURM provides automatic failover and fault-tolerant job management capabilities, ensuring the continuity of operations even when individual components fail.
 
 By the end of this course, we aim for you to be comfortable with using SLURM for managing your computational tasks, ranging from the creation and submission of jobs, monitoring their execution, to managing output files and analyzing job
-
+</div>

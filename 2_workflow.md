@@ -5,7 +5,9 @@ nav: true
 
 # Workflow
 
+<div align="justify">
 The typical workflow of a researcher using SLURM in an HPC environment involves several steps:
+<br> <!-- Blank line -->
 
 1. **Connect to the System**: Using Secure Shell (SSH), you connect to the login node of the HPC cluster.
 
@@ -17,5 +19,8 @@ The typical workflow of a researcher using SLURM in an HPC environment involves 
 
 5. **Transfer Results**: Once your job is completed, you can copy your output files from the compute node back to your local system.
 
+<br> <!-- Blank line -->
+
 In the following sections, we will delve into each of these steps, starting with a detailed walkthrough of a simple example.
 
+</div>
