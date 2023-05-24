@@ -49,22 +49,20 @@ The training session will be conducted as per the following schedule:
 
 <table>
     <tr>
-        <th>Time</th>
-        <th>Event</th>
-    </tr>
-    <tr>
-        <td>10:00-10:45</td>
+        <th>10:00-10:45</th>
         <td>Introduction and Workflow</td>
     </tr>
     <tr>
-        <td>10:45-11:00</td>
+        <th>10:45-11:00</th>
         <td>Coffee Break</td>
     </tr>
     <tr>
-        <td>11:00-11:45</td>
+        <th>11:00-11:45</th>
         <td>First Example, Monitoring and Wrap-up</td>
     </tr>
+
 </table>
+
 
 
 We look forward to an engaging and informative session ahead!
