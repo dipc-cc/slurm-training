@@ -26,7 +26,8 @@ Welcome to the SLURM training session! We're thrilled to have you join us for th
 <table>
     <tr>
         <th>Iker Ortiz de Luzuriaga</th>
-        <td>Iker is a recognized expert in HPC with years of experience in working with various job schedulers. His extensive knowledge and clear teaching style make complex topics easily understandable.</td>
+        <td><div align="justify">
+ Iker is a recognized expert in HPC with years of experience in working with various job schedulers. His extensive knowledge and clear teaching style make complex topics easily understandable.</div></td>
     </tr>
     <tr>
         <th>Diego Lasa</th>
