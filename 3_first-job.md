@@ -26,7 +26,9 @@ In this case, we'll be using the Monte Carlo method to estimate the value of π.
 </div>
 
 <br> <!-- Blank line -->
-1. <div align="justify"> **Create a bounded area**: Imagine a square with a side length of 1 unit. Now, inscribe a quarter-circle with a radius of 1 unit inside this square, like a pie wedge.</div>
+1. <div align="justify">
+ **Create a bounded area**: Imagine a square with a side length of 1 unit. Now, inscribe a quarter-circle with a radius of 1 unit inside this square, like a pie wedge.
+</div>
 
 2. <div align="justify"> **Throw darts**: We then "throw darts" at this square. The position (x, y) of each dart is determined randomly.</div>
 
