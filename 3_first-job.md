@@ -46,9 +46,11 @@ In the example script, we'll be generating these "random dart throws" using the 
 
 
 Absolutely, we can integrate the use of <code>sbatch</code>, <code>salloc</code>, and <code>srun</code> into the Monte Carlo Pi estimation example. Here's the revised section:
+</div>
 
 ## Sample Batch Script
 
+<div align="justify">
 First, let's examine the SLURM batch script. We'll name our batch script <code>pi_estimation.sh</code>. It's important to note that the batch script is the primary way to submit jobs to the SLURM scheduler, and we submit this script using the `sbatch` command.
 </div>
 
@@ -128,16 +130,18 @@ Remember that all <code>SBATCH</code> directives must come before any executable
 This batch script generates four parallel tasks, each performing a million trials to estimate the value of Pi. It demonstrates both the basic usage of SLURM and the application of parallel processing in solving computationally intensive problems. 
 
 To submit this job script to SLURM, we would use the <code>sbatch</code> command:
+</div>
 
 ```bash
 sbatch pi_estimation.sh
 ```
 <div align="justify">
 This script, as well as subsequent outputs, error logs, and other relevant files, will be used throughout this course as we delve deeper into the powerful features of SLURM.
-
+</div>
 
 ## Interactive job with salloc
 
+<div align="justify">
 In some cases, you might want to run your jobs interactively, that is, get a shell on a compute node where you can type commands and run programs directly. This can be done using <code>salloc</code>.
 
 Here's how you could use <code>salloc</code> to start an interactive shell with 4 CPUs for one hour, and then run the Pi estimation program interactively:
@@ -150,9 +154,11 @@ exit
 ```
 <div align="justify">
 The <code>salloc</code> command allocates resources (in this case, 4 tasks for a duration of one hour) and starts a shell. In that shell, you can then directly execute the <code>pi_estimation.sh</code> script. Once you're done, don't forget to type <code>exit</code> to release the allocation.
+</div>
 
 ## Direct job step execution with srun
 
+<div align="justify">
 <code>srun</code> is another important command in SLURM. It allows you to run job steps directly without having to write a batch script. A job step is essentially a set of (possibly multiple) tasks that are co-scheduled across one or more nodes.
 
 In the context of our Pi estimation program, you could use <code>srun</code> to directly run the Pi estimation commands as a job step. However, as our script is a bit more complex (with loops and conditionals), it's not straightforward to do it with <code>srun</code> directly. Instead, we can wrap our core script into another script and then use <code>srun</code> to execute it:
