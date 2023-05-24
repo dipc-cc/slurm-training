@@ -11,8 +11,6 @@ title: Home
 Welcome to the SLURM training session! We're thrilled to have you join us for this exciting journey into the world of High-Performance Computing (HPC) using SLURM.
 
 
-*See also:* [workshop-template-b](https://evanwill.github.io/workshop-template-b/), Bootstrap version.
-
 <div class="toc" markdown="1">
 ## Contents:
 
