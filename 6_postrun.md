@@ -106,17 +106,17 @@ At what point would you consider to be peak performance in this example.
 
 You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
   </p>
-  <div class="additional-info-toggle">Show Additional Information</div>
+  <div class="additional-info-toggle">Solution</div>
   <div class="additional-info">
-   <h3>Additional Information</h3>
    <p>
      
-    <ol>
+   <ol>
 	<li>No, the performance is still increasing, at this point we are no longer achieving perfect scalability.</li>
     	<li>Yes, the performance peaks at this location, and one cannot get higher speed up with this set up.</li>
     	<li>No, peak performance has already been achieved, and increasing the core count will onlt reduce performance.</li>
     	<li>No, although you can run extra benchmarks to find the exact number of cores at which the inflection point truly lies, there is no real purpose for doing so.</li>
-  
+   <ol> 
+
 In response to option #4, if you produce scalability studies on different machines, they will be different because of the varying setups and hardware configurations of the machines. It is highly unlikely to obtain two identical scalability studies, but they may agree to some extent.
    </p>
   </div>
@@ -126,7 +126,7 @@ In response to option #4, if you produce scalability studies on different machin
   document.querySelector('.additional-info-toggle').addEventListener('click', function() {
     var additionalInfo = document.querySelector('.additional-info');
     additionalInfo.style.display = (additionalInfo.style.display === 'none') ? 'block' : 'none';
-    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Additional Information' : 'Hide Additional Information';
+    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Solution' : 'Hide Solution ';
   });
 </script>
 
