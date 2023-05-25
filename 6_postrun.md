@@ -89,7 +89,6 @@ You may find that a scalability graph my vary if you ran the same code on a diff
 ## collapsible markdown?
 
 <details><summary>CLICK ME</summary>
-<p>
 
 #### yes, even hidden code blocks!
 
@@ -97,7 +96,6 @@ You may find that a scalability graph my vary if you ran the same code on a diff
 print("hello world!")
 ```
 
-</p>
 </details>
   </p>
 </div>
