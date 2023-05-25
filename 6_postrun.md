@@ -106,7 +106,7 @@ At what point would you consider to be peak performance in this example.
 
 You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
   </p>
-  <div class="additional-info-toggle">Solution</div>
+  <div class="additional-info-toggle">Show Solution</div>
   <div class="additional-info">
    <ol>
 	<li>No, the performance is still increasing, at this point we are no longer achieving perfect scalability.</li>
