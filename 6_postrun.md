@@ -106,7 +106,7 @@ At what point would you consider to be peak performance in this example.
 
 You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
   </p>
-  <div class="additional-info-toggle">Show Solution</div>
+  <div class="additional-info-toggle">Show Additional Information</div>
   <div class="additional-info">
    <p>
    <ol>
@@ -124,7 +124,6 @@ In response to option #4, if you produce scalability studies on different machin
   document.querySelector('.additional-info-toggle').addEventListener('click', function() {
     var additionalInfo = document.querySelector('.additional-info');
     additionalInfo.style.display = (additionalInfo.style.display === 'none') ? 'block' : 'none';
-    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Solution' : 'Hide Solution ';
+    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Additional Information' : 'Hide Additional Information';
   });
 </script>
-
