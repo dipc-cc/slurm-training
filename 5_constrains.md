@@ -20,15 +20,15 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
 | serial        | 200      |  2-00:00:00  | 24         | 120         |             | cpu=1<br/>gpu=1<br/>node=1 |
 
 
-<table border="1" style="text-align: center">
+<table style="text-align: center; border-collapse: collapse;">
   <tr>
-    <th>QoS/Partition</th>
-    <th>Priority</th>
-    <th>MaxWall</th>
-    <th>MaxNodesPU</th>
-    <th>MaxJobsPU</th>
-    <th>MaxSubmitPU</th>
-    <th>MaxTRES</th>
+    <th style="border-bottom: 1px solid black;">QoS/Partition</th>
+    <th style="border-bottom: 1px solid black;">Priority</th>
+    <th style="border-bottom: 1px solid black;">MaxWall</th>
+    <th style="border-bottom: 1px solid black;">MaxNodesPU</th>
+    <th style="border-bottom: 1px solid black;">MaxJobsPU</th>
+    <th style="border-bottom: 1px solid black;">MaxSubmitPU</th>
+    <th style="border-bottom: 1px solid black;">MaxTRES</th>
   </tr>
   <tr>
     <td>regular</td>
