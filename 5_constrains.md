@@ -21,14 +21,14 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
 
 
 <table style="text-align: center; border-collapse: collapse;">
-  <tr>
-    <th style="border-bottom: 1px solid black;">QoS/Partition</th>
-    <th style="border-bottom: 1px solid black;">Priority</th>
-    <th style="border-bottom: 1px solid black;">MaxWall</th>
-    <th style="border-bottom: 1px solid black;">MaxNodesPU</th>
-    <th style="border-bottom: 1px solid black;">MaxJobsPU</th>
-    <th style="border-bottom: 1px solid black;">MaxSubmitPU</th>
-    <th style="border-bottom: 1px solid black;">MaxTRES</th>
+  <tr style="border-bottom: 1px solid black;">
+    <th>QoS/Partition</th>
+    <th>Priority</th>
+    <th>MaxWall</th>
+    <th>MaxNodesPU</th>
+    <th>MaxJobsPU</th>
+    <th>MaxSubmitPU</th>
+    <th>MaxTRES</th>
   </tr>
   <tr>
     <td>regular</td>
@@ -39,7 +39,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>test</td>
     <td>500</td>
     <td>00:10:00</td>
@@ -57,7 +57,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>xlong</td>
     <td>200</td>
     <td>8-00:00:00</td>
@@ -75,7 +75,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>xlarge</td>
     <td>200</td>
     <td>2-00:00:00</td>
@@ -94,6 +94,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td>cpu=1<br/>gpu=1<br/>node=1</td>
   </tr>
 </table>
+
 
 
 <table style="text-align: center; border-collapse: collapse;">
