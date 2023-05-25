@@ -47,24 +47,28 @@ Secondly, scaling results are necessary for resource allocation requests. Fundin
 Visualizations like speedup and efficiency plots effectively present scaling results. They illustrate execution time improvement and resource utilization effectiveness.
 </div>
 
+
 <style>
   .info-box {
-    background-color: #f2f2f2;
+    background-color: #c7e9c0; /* Green color */
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #92d693; /* Lighter shade of green for the border */
     border-radius: 4px;
   }
   
   .info-box h3 {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #333; /* Optional: Change the heading color if desired */
   }
   
   .info-box p {
     font-size: 14px;
     line-height: 1.5;
+    color: #333; /* Optional: Change the paragraph text color if desired */
   }
 </style>
+
 
 <div class="info-box">
   <h3>Important Information</h3>
