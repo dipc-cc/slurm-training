@@ -60,10 +60,13 @@ The format option `%.10i %.9P %.8j %.8u %.2t %.6D` is used to customize the outp
 - `%.6D`: Number of nodes with a field width of 6 characters.
 
 <div align="justify">
+Field width specifies the minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The full list of available options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.</div>
+
+<div align="justify">
 Field width specifies the minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The full list of available options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
 
 <div align="justify">
-With the `squeue` command, you can stay updated with the status and progress of your job in the scheduling queue. In the next section, we will explore `sacct` and <code>sstat</code> to get more detailed information about the resource usage of your job.</div>
+With the <code>squeue</code> command, you can stay updated with the status and progress of your job in the scheduling queue. In the next section, we will explore <code>sacct</code> and <code>sstat</code> to get more detailed information about the resource usage of your job.</div>
 
 Sure, let's dive into more ways you can use `squeue` to monitor your jobs.
 
@@ -81,7 +84,7 @@ This will show all jobs currently in the 'regular' partition, regardless of the 
 ### Example 2: Viewing Jobs in Specific States
 
 <div align="justify">
-You can use `squeue` to display jobs in specific states. This can be particularly useful when you want to see how many jobs are running, pending, or completed. Use the `-t` or `--states` option followed by the state:</div>
+You can use <code>squeue</code> to display jobs in specific states. This can be particularly useful when you want to see how many jobs are running, pending, or completed. Use the <code>-t</code> or <code>--states</code> option followed by the state:</div>
 
 ```bash
 squeue -u $USER -t RUNNING
