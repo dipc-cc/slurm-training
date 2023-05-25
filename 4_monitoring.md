@@ -21,13 +21,13 @@ Think of `squeue` as your immediate source of information about your jobs. The `
 <div align="justify">
 Let's say you've just submitted your Pi estimation job, and you're keen to check its status. Here's how to do it:
 </div>
-
+<br> <!-- Blank line -->
 ```bash
 squeue -u $USER
 ```
 <div align="justify">
 The <code>-u</code> flag followed by <code>$USER</code> allows you to filter the jobs belonging to your user. The output will be a table listing your jobs:</div>
-
+<br> <!-- Blank line -->
 ```
   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
 123456     debug pi_estim  username  R       0:25      1 node007
@@ -233,7 +233,7 @@ This output provides an overall picture of how efficiently your job utilized the
 ## scontrol
 <div align="justify">
 <code>scontrol</code> is a utility provided by SLURM for administrative tasks, but it also has several functions that can be useful for users. One of these is the ability to display detailed information about a specific job. For example:</div>
-
+<br> <!-- Blank line -->
 ```bash
 scontrol show job 123456
 ```
