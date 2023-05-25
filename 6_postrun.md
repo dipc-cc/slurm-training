@@ -105,7 +105,7 @@ At what point would you consider to be peak performance in this example.
 
 You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
   </p>
-  <div class="additional-info-toggle">Show Additional Information</div>
+  <div class="additional-info-toggle">Show Solution</div>
   <div class="additional-info">
     <h3>Additional Information</h3>
     <p>
@@ -121,12 +121,11 @@ You may find that a scalability graph may vary if you ran the same code on a dif
   additionalInfoToggle.addEventListener('click', function() {
     if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
       additionalInfo.style.display = 'block';
-      additionalInfoToggle.textContent = 'Hide Additional Information';
+      additionalInfoToggle.textContent = 'Hide Solution';
     } else {
       additionalInfo.style.display = 'none';
-      additionalInfoToggle.textContent = 'Show Additional Information';
+      additionalInfoToggle.textContent = 'Show Solution';
     }
   });
 </script>
 
-Hola
