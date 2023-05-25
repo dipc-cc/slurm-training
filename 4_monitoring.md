@@ -5,23 +5,28 @@ nav: true
 
 # Monitoring
 
+<div align="justify">
 As we progress through our exploration of SLURM, we now approach an essential aspect of job management - monitoring. After you've submitted your job to the HPC cluster (like our Pi estimation job from the previous example), you'll want to track its status. Monitoring allows you to understand your job's progress, check its resource usage, and help identify any potential issues that could affect its successful completion.
-
+</div>
+<div align="justify">
 SLURM provides several tools to assist you in job monitoring, including `squeue`, `sacct`, `sstat`, and `seff`. Let's dive into these commands, understand their usage, and see how we can leverage them for efficient job tracking.
-
+</div
+>
 Absolutely. Here's a more comprehensive version of the `squeue` section.
 
 ## squeue
-
+<div align="justify">
 Think of `squeue` as your immediate source of information about your jobs. The `squeue` command displays information about jobs located in the SLURM scheduling queue. 
-
+</div>
+<div align="justify">
 Let's say you've just submitted your Pi estimation job, and you're keen to check its status. Here's how to do it:
+</div>
 
 ```bash
 squeue -u $USER
 ```
-
-The `-u` flag followed by `$USER` allows you to filter the jobs belonging to your user. The output will be a table listing your jobs:
+<div align="justify">
+The <code>-u</code> flag followed by <code>$USER</code> allows you to filter the jobs belonging to your user. The output will be a table listing your jobs:
 
 ```
   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
@@ -54,15 +59,18 @@ The format option `%.10i %.9P %.8j %.8u %.2t %.6D` is used to customize the outp
 - `%.2t`: Job state with a field width of 2 characters.
 - `%.6D`: Number of nodes with a field width of 6 characters.
 
-Field width specifies the minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The full list of available options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).
+<div align="justify">
+Field width specifies the minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The full list of available options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
 
-With the `squeue` command, you can stay updated with the status and progress of your job in the scheduling queue. In the next section, we will explore `sacct` and `sstat` to get more detailed information about the resource usage of your job.
+<div align="justify">
+With the `squeue` command, you can stay updated with the status and progress of your job in the scheduling queue. In the next section, we will explore `sacct` and <code>sstat</code> to get more detailed information about the resource usage of your job.</div>
 
 Sure, let's dive into more ways you can use `squeue` to monitor your jobs.
 
 ### Example 1: Viewing All Jobs in a Specific Partition
 
-If you want to view all jobs currently in a specific partition, you can use the `-p` or `--partition` option. For example, to view all jobs in the 'regular' partition:
+<div align="justify">
+If you want to view all jobs currently in a specific partition, you can use the <code>-p</code> or <code>--partition</code> option. For example, to view all jobs in the <code>regular</code> partition:
 
 ```bash
 squeue -p regular
@@ -72,7 +80,8 @@ This will show all jobs currently in the 'regular' partition, regardless of the 
 
 ### Example 2: Viewing Jobs in Specific States
 
-You can use `squeue` to display jobs in specific states. This can be particularly useful when you want to see how many jobs are running, pending, or completed. Use the `-t` or `--states` option followed by the state:
+<div align="justify">
+You can use `squeue` to display jobs in specific states. This can be particularly useful when you want to see how many jobs are running, pending, or completed. Use the `-t` or `--states` option followed by the state:</div>
 
 ```bash
 squeue -u $USER -t RUNNING
@@ -109,26 +118,27 @@ Here are all the job states you can query using the `-t` or `--states` option of
 - `SPECIAL_EXIT` (or `SE`): The job terminated in a condition that is interpreted as an exit code.
 
 ### Example 3: Sorting Jobs
-
-`squeue` can also sort jobs based on various attributes such as priority, job ID, time left, etc. For instance, to sort your jobs based on their remaining time in descending order, use the `--sort` option:
+<div align="justify">
+<code>squeue</code> can also sort jobs based on various attributes such as priority, job ID, time left, etc. For instance, to sort your jobs based on their remaining time in descending order, use the <code>--sort</code> option:</div>
 
 ```bash
 squeue -u $USER --sort=-t
 ```
+<div align="justify">
+This will display your jobs in descending order of remaining time (<code>-t</code>). The <code>-</code> sign before <code>t</code> is used for descending order. Without it, the jobs would be sorted in ascending order.</div>
 
-This will display your jobs in descending order of remaining time (`-t`). The `-` sign before `t` is used for descending order. Without it, the jobs would be sorted in ascending order.
-
-These examples show the versatility of the `squeue` command and how it can be customized to get specific information about your jobs. Please remember to replace `$USER` with your username or keep it as is if you're running these commands directly in your terminal session. The full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).
+<div align="justify">
+These examples show the versatility of the <code>squeue</code> command and how it can be customized to get specific information about your jobs. Please remember to replace <code>$USER</code> with your username or keep it as is if you're running these commands directly in your terminal session. The full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
 
 ### Example 4: Showing Extended Job Information 
-
-If you want to see more detailed information about a particular job, including its start time, estimated end time, and the nodes it's running on, you can use the `-l` or `--long` option. 
+<div align="justify">
+If you want to see more detailed information about a particular job, including its start time, estimated end time, and the nodes it's running on, you can use the <code>-l</code> or <code>--long</code> option. </div>
 
 ```bash
 squeue -j 123456 --long
 ```
-
-This command will display extended information about the job with ID 123456 (replace it with your job ID). The output might look like this:
+<div align="justify">
+This command will display extended information about the job with ID 123456 (replace it with your job ID). The output might look like this:</div>
 
 ```
 Tue May 23 10:15:39 2023
@@ -137,32 +147,32 @@ Tue May 23 10:15:39 2023
 ```
 
 ### Example 5: Displaying Job Information in Parsable Format
-
-For scripts or other automated tasks, you might want to obtain the job information in a parsable format. The `-h` or `--noheader` option can be used to suppress the header, and the `--Format` option allows you to specify the exact fields you need. For instance:
+<div align="justify">
+For scripts or other automated tasks, you might want to obtain the job information in a parsable format. The <code>-h</code> or <code>--noheader</code> option can be used to suppress the header, and the <code>--Format</code> option allows you to specify the exact fields you need. For instance:</div>
 
 ```bash
 squeue -j 123456 --noheader --Format=jobid,username,state
 ```
-
-This will return a single line of output with the job ID, username, and state, separated by pipe characters. The output might look like:
+<div align="justify">
+This will return a single line of output with the job ID, username, and state, separated by pipe characters. The output might look like:</div>
 
 ```
 123456|myuser|RUNNING
 ```
-
-In these examples, remember to replace `123456` with the ID of your job, and `myuser` with your username. The full list of format specifiers and options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).
+<div align="justify">
+In these examples, remember to replace <code>123456</code> with the ID of your job, and <code>myuser</code> with your username. The full list of format specifiers and options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
 
 ## sacct
-
-The `sacct` command provides accounting data for all jobs and job steps in the SLURM workload manager. It's a treasure trove of information about your job's performance, offering insights into resource usage and time spent on different stages.
+<div align="justify">
+The <code>sacct</code> command provides accounting data for all jobs and job steps in the SLURM workload manager. It's a treasure trove of information about your job's performance, offering insights into resource usage and time spent on different stages.</div>
 
 To view the accounting data for a specific job, use the `-j` flag followed by the job id:
 
 ```bash
 sacct -j 123456 --format=JobID,JobName,MaxRSS,Elapsed
 ```
-
-The `--format` option customizes the output, similar to the `squeue` command. In the above command, we are asking for the Job ID, Job Name, Maximum RSS memory used, and the Elapsed time of the job. A full list of available format options can be found in the [SLURM documentation](https://slurm.schedmd.com/sacct.html).
+<div align="justify">
+The <code>--format</code> option customizes the output, similar to the <code>squeue</code> command. In the above command, we are asking for the Job ID, Job Name, Maximum RSS memory used, and the Elapsed time of the job. A full list of available format options can be found in the [SLURM documentation](https://slurm.schedmd.com/sacct.html).</div>
 
 The output might look like this:
 
@@ -173,16 +183,16 @@ The output might look like this:
 ```
 
 ## sstat
-
-`sstat` allows us to fetch the real-time status of a running job or step. This command gives us live updates on resource usage, which can be essential for optimizing your application.
+<div align="justify">
+<code>sstat</code> allows us to fetch the real-time status of a running job or step. This command gives us live updates on resource usage, which can be essential for optimizing your application.</div>
 
 To get real-time stats of your running job:
 
 ```bash
 sstat -j 123456 --format=JobID,AveCPU,AveRSS,AveVMSize
 ```
-
-Again, the `--format` option allows us to customize the output. This command displays the Job ID, average CPU usage, average resident set size (RSS) memory, and average virtual memory size. 
+<div align="justify">
+Again, the <code>--format</code> option allows us to customize the output. This command displays the Job ID, average CPU usage, average resident set size (RSS) memory, and average virtual memory size.</div>
 
 Here is a sample output:
 
@@ -195,8 +205,8 @@ Here is a sample output:
 The full list of format options can be found in the [SLURM documentation](https://slurm.schedmd.com/sstat.html).
 
 ## seff
-
-`seff` provides a brief summary of the efficiency of your job. Although it's not part of the default SLURM installation, it's widely used due to its effectiveness.
+<div align="justify">
+<code>seff</code> provides a brief summary of the efficiency of your job. Although it's not part of the default SLURM installation, it's widely used due to its effectiveness.</div>
 
 ```bash
 seff 123456
@@ -217,17 +227,18 @@ Memory Utilized: 100.00 MB
 Memory Efficiency: 25.00% of 400.00 MB
 ```
 
-This output provides an overall picture of how efficiently your job utilized the allocated resources, which can be crucial in optimizing your application for an HPC environment. The use of these commands will give you a good understanding of how your job is performing and where there might be room for improvement.
+<div align="justify">
+This output provides an overall picture of how efficiently your job utilized the allocated resources, which can be crucial in optimizing your application for an HPC environment. The use of these commands will give you a good understanding of how your job is performing and where there might be room for improvement.</div>
 
 ## scontrol
-
-`scontrol` is a utility provided by SLURM for administrative tasks, but it also has several functions that can be useful for users. One of these is the ability to display detailed information about a specific job. For example:
+<div align="justify">
+<code>scontrol</code> is a utility provided by SLURM for administrative tasks, but it also has several functions that can be useful for users. One of these is the ability to display detailed information about a specific job. For example:</div>
 
 ```bash
 scontrol show job 123456
 ```
-
-This command will show a detailed description of the job with ID 123456, including the time it was submitted, its current state, the partition it's running in, the resources it's using, and many other details. 
+<div align="justify">
+This command will show a detailed description of the job with ID 123456, including the time it was submitted, its current state, the partition it's running in, the resources it's using, and many other details. </div>
 
 Here's a truncated example of what the output might look like:
 
@@ -239,18 +250,18 @@ JobId=123456 JobName=pi_estim
    Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
    ...
 ```
-
-Note: The output of `scontrol show job` is quite long and has been truncated for brevity. To see all the information, run this command yourself with one of your job IDs.
+<div align="justify">
+Note: The output of <code>scontrol show job</code> is quite long and has been truncated for brevity. To see all the information, run this command yourself with one of your job IDs.</div>
 
 ## sinfo
-
-While `sinfo` is more typically used to display information about nodes and partitions, it can also be used to monitor the resources being used by jobs in real-time. For example:
+<div align="justify">
+While <code>sinfo</code> is more typically used to display information about nodes and partitions, it can also be used to monitor the resources being used by jobs in real-time. For example:</div>
 
 ```bash
 sinfo -N -l
 ```
-
-This command will display a long format list of all nodes, showing which nodes are allocated to which jobs, the state of each node, how much of its resources are being used, and other details. 
+<div align="justify">
+This command will display a long format list of all nodes, showing which nodes are allocated to which jobs, the state of each node, how much of its resources are being used, and other details.</div>
 
 Here's an example of what the output might look like:
 
@@ -263,5 +274,5 @@ n0001          1  regular*   allocated   24   2:12:1  64000    48000      1   (n
 ```
 
 In this example, you can see that node `n0001` is allocated to job 123456, which is currently running. 
-
-As always, remember to replace `123456` with your job ID and `myuser` with your username in these examples. And as always, the full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/).
+<div align="justify">
+As always, remember to replace <code>123456</code> with your job ID and <code>myuser</code> with your username in these examples. And as always, the full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/).</div>

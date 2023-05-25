@@ -132,11 +132,10 @@ Here are the explanations for each `SBATCH` directive used in our batch script:
 Remember that all <code>SBATCH</code> directives must come before any executable line in your script. 
 
 This batch script generates four parallel tasks, each performing a million trials to estimate the value of Pi. It demonstrates both the basic usage of SLURM and the application of parallel processing in solving computationally intensive problems. 
-To submit this job script to SLURM, we would use the <code>sbatch</code> command:
 </div>
 
+To submit this job script to SLURM, we would use the <code>sbatch</code> command:
 <br> <!-- Blank line -->
-
 ```bash
 sbatch pi_estimation.sh
 ```
@@ -169,9 +168,7 @@ The <code>salloc</code> command allocates resources (in this case, 4 tasks for a
 In the context of our Pi estimation program, you could use <code>srun</code> to directly run the Pi estimation commands as a job step. However, as our script is a bit more complex (with loops and conditionals), it's not straightforward to do it with <code>srun</code> directly. Instead, we can wrap our core script into another script and then use <code>srun</code> to execute it:
 </div>
 First, extract the core logic of our Pi estimation into a separate script, <code>core_pi.sh</code>:
-
 <br> <!-- Blank line -->
-
 ```bash
 #!/bin/bash
 
