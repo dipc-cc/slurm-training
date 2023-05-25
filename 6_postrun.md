@@ -107,7 +107,6 @@ You may find that a scalability graph may vary if you ran the same code on a dif
   </p>
   <div class="additional-info-toggle">Show Solution</div>
   <div class="additional-info">
-    <h3>Additional Information</h3>
     <p>
       In response to option #4, if you produce scalability studies on different machines, they will be different because of the varying setups and hardware configurations of the machines. It is highly unlikely to obtain two identical scalability studies, but they may agree to some extent.
     </p>
