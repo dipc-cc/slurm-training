@@ -55,7 +55,6 @@ In conclusion, scaling experiments are vital for understanding code scalability 
 
 
 
-
 <style>
   .info-box {
     background-color: #f0f8ff;
@@ -108,7 +107,7 @@ At what point would you consider to be peak performance in this example.
 You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
   </p>
   <div class="additional-info-toggle">Show Additional Information</div>
-  <div class="additional-info" style="display: block;"> <!-- Displayed by default -->
+  <div class="additional-info">
     <h3>Additional Information</h3>
     <p>
       In response to option #4, if you produce scalability studies on different machines, they will be different because of the varying setups and hardware configurations of the machines. It is highly unlikely to obtain two identical scalability studies, but they may agree to some extent.
@@ -117,10 +116,17 @@ You may find that a scalability graph may vary if you ran the same code on a dif
 </div>
 
 <script>
-  document.querySelector('.additional-info-toggle').addEventListener('click', function() {
-    var additionalInfo = document.querySelector('.additional-info');
-    additionalInfo.style.display = (additionalInfo.style.display === 'none') ? 'block' : 'none';
-    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Additional Information' : 'Hide Additional Information';
+  var additionalInfoToggle = document.querySelector('.additional-info-toggle');
+  var additionalInfo = document.querySelector('.additional-info');
+
+  additionalInfoToggle.addEventListener('click', function() {
+    if (additionalInfo.style.display === 'none') {
+      additionalInfo.style.display = 'block';
+      additionalInfoToggle.textContent = 'Hide Additional Information';
+    } else {
+      additionalInfo.style.display = 'none';
+      additionalInfoToggle.textContent = 'Show Additional Information';
+    }
   });
 </script>
 
