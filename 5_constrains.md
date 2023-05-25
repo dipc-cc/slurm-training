@@ -84,6 +84,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
   </tr>
 </table>
 
+<br> <!-- Blank line -->
 This is what each columns means:
 
 - MaxWall: Maximum amount of time the job is allowed to run. ´1-00:00:00´ reads as one day or 24 hours.
