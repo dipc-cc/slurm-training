@@ -25,7 +25,6 @@ The Monte Carlo method, named after the famous Monaco casino, is a statistical t
 In this case, we'll be using the Monte Carlo method to estimate the value of π. Here's the idea:
 </div>
 
-<br> <!-- Blank line -->
 1. **Create a bounded area**: Imagine a square with a side length of 1 unit. Now, inscribe a quarter-circle with a radius of 1 unit inside this square, like a pie wedge.
 
 2. **Throw darts**: We then "throw darts" at this square. The position (x, y) of each dart is determined randomly.
@@ -51,8 +50,10 @@ Absolutely, we can integrate the use of <code>sbatch</code>, <code>salloc</code>
 ## Sample Batch Script
 
 <div align="justify">
-First, let's examine the SLURM batch script. We'll name our batch script <code>pi_estimation.sh</code>. It's important to note that the batch script is the primary way to submit jobs to the SLURM scheduler, and we submit this script using the `sbatch` command.
+First, let's examine the SLURM batch script. We'll name our batch script <code>pi_estimation.sh</code>. It's important to note that the batch script is the primary way to submit jobs to the SLURM scheduler, and we submit this script using the <code>sbatch</code> command.
 </div>
+
+<br> <!-- Blank line -->
 
 ```bash
 #!/bin/bash
@@ -105,6 +106,8 @@ wait
 Once you've written your batch script, you can submit it to SLURM using the <code>sbatch</code> command. The <code>sbatch</code> command reads a script file and submits the script as a job to SLURM. The script contains both the job parameters, specified on lines beginning with <code>#SBATCH</code>, and the job commands.
 </div>
 
+<br> <!-- Blank line -->
+
 ```bash
 sbatch pi_estimation.sh
 ```
@@ -123,12 +126,10 @@ Here are the explanations for each `SBATCH` directive used in our batch script:
 | `--mail-user=your-email@example.com`  | Specifies the email address to receive job status updates.
 
 
-<br> <!-- Blank line -->
 <div align="justify">
 Remember that all <code>SBATCH</code> directives must come before any executable line in your script. 
 
 This batch script generates four parallel tasks, each performing a million trials to estimate the value of Pi. It demonstrates both the basic usage of SLURM and the application of parallel processing in solving computationally intensive problems. 
-
 To submit this job script to SLURM, we would use the <code>sbatch</code> command:
 </div>
 
@@ -147,10 +148,10 @@ In some cases, you might want to run your jobs interactively, that is, get a she
 Here's how you could use <code>salloc</code> to start an interactive shell with 4 CPUs for one hour, and then run the Pi estimation program interactively:
 </div>
 
-```bash
-salloc --ntasks=4 --time=01:00:00
-bash pi_estimation.sh
-exit
+<br> <!-- Blank line -->
+
+```bash 
+salloc --ntasks=4 --time=01:00:00 bash pi_estimation.sh exit
 ```
 <div align="justify">
 The <code>salloc</code> command allocates resources (in this case, 4 tasks for a duration of one hour) and starts a shell. In that shell, you can then directly execute the <code>pi_estimation.sh</code> script. Once you're done, don't forget to type <code>exit</code> to release the allocation.
