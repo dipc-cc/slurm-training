@@ -9,9 +9,9 @@ nav: true
 As we progress through our exploration of SLURM, we now approach an essential aspect of job management - monitoring. After you've submitted your job to the HPC cluster (like our Pi estimation job from the previous example), you'll want to track its status. Monitoring allows you to understand your job's progress, check its resource usage, and help identify any potential issues that could affect its successful completion.
 </div>
 <div align="justify">
-SLURM provides several tools to assist you in job monitoring, including `squeue`, `sacct`, `sstat`, and `seff`. Let's dive into these commands, understand their usage, and see how we can leverage them for efficient job tracking.
-</div
->
+SLURM provides several tools to assist you in job monitoring, including <code>squeue</code>, <code>sacct</code>, <code>sstat</code>, and <code>seff</code>. Let's dive into these commands, understand their usage, and see how we can leverage them for efficient job tracking.
+</div>
+
 Absolutely. Here's a more comprehensive version of the `squeue` section.
 
 ## squeue
@@ -26,7 +26,7 @@ Let's say you've just submitted your Pi estimation job, and you're keen to check
 squeue -u $USER
 ```
 <div align="justify">
-The <code>-u</code> flag followed by <code>$USER</code> allows you to filter the jobs belonging to your user. The output will be a table listing your jobs:
+The <code>-u</code> flag followed by <code>$USER</code> allows you to filter the jobs belonging to your user. The output will be a table listing your jobs:</div>
 
 ```
   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
