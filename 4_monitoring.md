@@ -63,9 +63,6 @@ The format option `%.10i %.9P %.8j %.8u %.2t %.6D` is used to customize the outp
 Field width specifies the minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The full list of available options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.</div>
 
 <div align="justify">
-Field width specifies the minimum number of characters to be printed. If the value to be printed is shorter than this number, the result is padded with blank spaces. The full list of available options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
-
-<div align="justify">
 With the <code>squeue</code> command, you can stay updated with the status and progress of your job in the scheduling queue. In the next section, we will explore <code>sacct</code> and <code>sstat</code> to get more detailed information about the resource usage of your job.</div>
 
 Sure, let's dive into more ways you can use `squeue` to monitor your jobs.
@@ -73,7 +70,7 @@ Sure, let's dive into more ways you can use `squeue` to monitor your jobs.
 ### Example 1: Viewing All Jobs in a Specific Partition
 
 <div align="justify">
-If you want to view all jobs currently in a specific partition, you can use the <code>-p</code> or <code>--partition</code> option. For example, to view all jobs in the <code>regular</code> partition:
+If you want to view all jobs currently in a specific partition, you can use the <code>-p</code> or <code>--partition</code> option. For example, to view all jobs in the <code>regular</code> partition:</div>
 
 ```bash
 squeue -p regular
@@ -163,7 +160,7 @@ This will return a single line of output with the job ID, username, and state, s
 123456|myuser|RUNNING
 ```
 <div align="justify">
-In these examples, remember to replace <code>123456</code> with the ID of your job, and <code>myuser</code> with your username. The full list of format specifiers and options can be found in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
+In these examples, remember to replace <code>123456</code> with the ID of your job, and <code>myuser</code> with your username. The full list of format specifiers and options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.</div>
 
 ## sacct
 <div align="justify">
@@ -175,7 +172,7 @@ To view the accounting data for a specific job, use the `-j` flag followed by th
 sacct -j 123456 --format=JobID,JobName,MaxRSS,Elapsed
 ```
 <div align="justify">
-The <code>--format</code> option customizes the output, similar to the <code>squeue</code> command. In the above command, we are asking for the Job ID, Job Name, Maximum RSS memory used, and the Elapsed time of the job. A full list of available format options can be found in the [SLURM documentation](https://slurm.schedmd.com/sacct.html).</div>
+The <code>--format</code> option customizes the output, similar to the <code>squeue</code> command. In the above command, we are asking for the Job ID, Job Name, Maximum RSS memory used, and the Elapsed time of the job. A full list of available format options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.</div>
 
 The output might look like this:
 
@@ -205,7 +202,7 @@ Here is a sample output:
 123456    00:02:00   100.00MB    500.00MB
 ```
 
-The full list of format options can be found in the [SLURM documentation](https://slurm.schedmd.com/sstat.html).
+The full list of format options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.
 
 ## seff
 <div align="justify">
@@ -278,4 +275,4 @@ n0001          1  regular*   allocated   24   2:12:1  64000    48000      1   (n
 
 In this example, you can see that node `n0001` is allocated to job 123456, which is currently running. 
 <div align="justify">
-As always, remember to replace <code>123456</code> with your job ID and <code>myuser</code> with your username in these examples. And as always, the full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/).</div>
+As always, remember to replace <code>123456</code> with your job ID and <code>myuser</code> with your username in these examples. And as always, the full list of options is available in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.</div>
