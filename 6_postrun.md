@@ -47,6 +47,32 @@ Secondly, scaling results are necessary for resource allocation requests. Fundin
 Visualizations like speedup and efficiency plots effectively present scaling results. They illustrate execution time improvement and resource utilization effectiveness.
 </div>
 
+<style>
+  .info-box {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .info-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .info-box p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="info-box">
+  <h3>Important Information</h3>
+  <p>This is the content of the informative box.</p>
+</div>
+
+
+
 <div align="justify" class="text">
 In conclusion, scaling experiments are vital for understanding code scalability and parallel performance. They inform optimization efforts and support resource allocation requests. Visualizations aid in communicating results effectively.
 </div>
