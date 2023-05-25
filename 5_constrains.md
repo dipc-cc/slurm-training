@@ -19,6 +19,83 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
 | xlarge        | 200      |  2-00:00:00  | 80         |   6         |             |                            |
 | serial        | 200      |  2-00:00:00  | 24         | 120         |             | cpu=1<br/>gpu=1<br/>node=1 |
 
+
+<table border="1" style="text-align: center">
+  <tr>
+    <th>QoS/Partition</th>
+    <th>Priority</th>
+    <th>MaxWall</th>
+    <th>MaxNodesPU</th>
+    <th>MaxJobsPU</th>
+    <th>MaxSubmitPU</th>
+    <th>MaxTRES</th>
+  </tr>
+  <tr>
+    <td>regular</td>
+    <td>200</td>
+    <td>1-00:00:00</td>
+    <td>24</td>
+    <td>50</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>test</td>
+    <td>500</td>
+    <td>00:10:00</td>
+    <td>2</td>
+    <td>2</td>
+    <td>2</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>long</td>
+    <td>200</td>
+    <td>2-00:00:00</td>
+    <td>24</td>
+    <td>20</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>xlong</td>
+    <td>200</td>
+    <td>8-00:00:00</td>
+    <td>6</td>
+    <td>14</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>large</td>
+    <td>200</td>
+    <td>2-00:00:00</td>
+    <td>40</td>
+    <td>6</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>xlarge</td>
+    <td>200</td>
+    <td>2-00:00:00</td>
+    <td>80</td>
+    <td>6</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>serial</td>
+    <td>200</td>
+    <td>2-00:00:00</td>
+    <td>24</td>
+    <td>120</td>
+    <td></td>
+    <td>cpu=1<br/>gpu=1<br/>node=1</td>
+  </tr>
+</table>
+
+
 <table style="text-align: center; border-collapse: collapse;">
   <colgroup>
     <col style="width: 30px">
