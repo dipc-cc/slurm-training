@@ -2,6 +2,11 @@
 title: Advanced
 nav: true
 ---
+<style>
+.text {
+  margin-bottom: 10px;
+}
+</style>
 
 # advanced/
 
