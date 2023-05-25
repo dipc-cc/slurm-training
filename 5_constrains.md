@@ -19,39 +19,39 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
 | xlarge        | 200      |  2-00:00:00  | 80         |   6         |             |                            |
 | serial        | 200      |  2-00:00:00  | 24         | 120         |             | cpu=1<br/>gpu=1<br/>node=1 |
 
-
-<table border="1" style="text-align: center">
-<colgroup>
-<col style="width: 30px" />
-<col style="width: 30px" />
-<col style="width: 30px" />
-<col style="width: 30px" />
-<col style="width: 30px" />
-</colgroup>
-<tr>
-<td colspan="3">Title goes here</td>
-<td>A</td>
-<td style="text-align: right">B</td>
-</tr>
-<tr>
-<td rowspan="3">C</td>
-<td>D</td>
-<td>E</td>
-<td>F</td>
-<td style="text-align: right">G</td>
-</tr>
-<tr>
-<td>H</td>
-<td colspan="2">I</td>
-<td rowspan="2" style="text-align: right; vertical-align: bottom">J</td>
-</tr>
-<tr>
-<td>K</td>
-<td>L</td>
-<td>M</td>
-</tr>
-<tr>
-<td style="text-align: right">N</td>
-<td colspan="4">O</td>
-</tr>
+<table style="text-align: center; border-collapse: collapse;">
+  <colgroup>
+    <col style="width: 30px">
+    <col style="width: 30px">
+    <col style="width: 30px">
+    <col style="width: 30px">
+    <col style="width: 30px">
+  </colgroup>
+  <tr>
+    <td colspan="3" style="border-bottom: 1px solid black;">Title goes here</td>
+    <td style="border-bottom: 1px solid black;">A</td>
+    <td style="text-align: right; border-bottom: 1px solid black;">B</td>
+  </tr>
+  <tr>
+    <td rowspan="3" style="border-bottom: 1px solid black;">C</td>
+    <td style="border-bottom: 1px solid black;">D</td>
+    <td style="border-bottom: 1px solid black;">E</td>
+    <td style="border-bottom: 1px solid black;">F</td>
+    <td style="text-align: right; border-bottom: 1px solid black;">G</td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 1px solid black;">H</td>
+    <td colspan="2" style="border-bottom: 1px solid black;">I</td>
+    <td rowspan="2" style="text-align: right; vertical-align: bottom; border-bottom: 1px solid black;">J</td>
+  </tr>
+  <tr>
+    <td style="border-bottom: 1px solid black;">K</td>
+    <td style="border-bottom: 1px solid black;">L</td>
+    <td style="border-bottom: 1px solid black;">M</td>
+  </tr>
+  <tr>
+    <td style="text-align: right; border-bottom: 1px solid black;">N</td>
+    <td colspan="4" style="border-bottom: 1px solid black;">O</td>
+  </tr>
 </table>
+
