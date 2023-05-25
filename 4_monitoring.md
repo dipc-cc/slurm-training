@@ -75,7 +75,7 @@ Sure, let's dive into more ways you can use `squeue` to monitor your jobs.
 
 ### Example 1: Viewing All Jobs in a Specific Partition
 
-<div align="justify">
+<div align="justify" class="text">
 If you want to view all jobs currently in a specific partition, you can use the <code>-p</code> or <code>--partition</code> option. For example, to view all jobs in the <code>regular</code> partition:</div>
 
 ```bash
@@ -86,7 +86,7 @@ This will show all jobs currently in the 'regular' partition, regardless of the 
 
 ### Example 2: Viewing Jobs in Specific States
 
-<div align="justify">
+<div align="justify" class="text">
 You can use <code>squeue</code> to display jobs in specific states. This can be particularly useful when you want to see how many jobs are running, pending, or completed. Use the <code>-t</code> or <code>--states</code> option followed by the state:</div>
 
 ```bash
@@ -124,7 +124,7 @@ Here are all the job states you can query using the `-t` or `--states` option of
 - `SPECIAL_EXIT` (or `SE`): The job terminated in a condition that is interpreted as an exit code.
 
 ### Example 3: Sorting Jobs
-<div align="justify">
+<div align="justify" class="tex5t">
 <code>squeue</code> can also sort jobs based on various attributes such as priority, job ID, time left, etc. For instance, to sort your jobs based on their remaining time in descending order, use the <code>--sort</code> option:</div>
 
 ```bash
@@ -136,14 +136,15 @@ This will display your jobs in descending order of remaining time (<code>-t</cod
 <div align="justify">
 These examples show the versatility of the <code>squeue</code> command and how it can be customized to get specific information about your jobs. Please remember to replace <code>$USER</code> with your username or keep it as is if you're running these commands directly in your terminal session. The full list of options is available in the [SLURM documentation](https://slurm.schedmd.com/squeue.html).</div>
 
+<br> <!-- Blank line -->
 ### Example 4: Showing Extended Job Information 
-<div align="justify">
+<div align="justify" class="text">
 If you want to see more detailed information about a particular job, including its start time, estimated end time, and the nodes it's running on, you can use the <code>-l</code> or <code>--long</code> option. </div>
 
 ```bash
 squeue -j 123456 --long
 ```
-<div align="justify">
+<div align="justify" class="text">
 This command will display extended information about the job with ID 123456 (replace it with your job ID). The output might look like this:</div>
 
 ```
@@ -153,13 +154,13 @@ Tue May 23 10:15:39 2023
 ```
 
 ### Example 5: Displaying Job Information in Parsable Format
-<div align="justify">
+<div align="justify" class="text">
 For scripts or other automated tasks, you might want to obtain the job information in a parsable format. The <code>-h</code> or <code>--noheader</code> option can be used to suppress the header, and the <code>--Format</code> option allows you to specify the exact fields you need. For instance:</div>
 
 ```bash
 squeue -j 123456 --noheader --Format=jobid,username,state
 ```
-<div align="justify">
+<div align="justify" class="text">
 This will return a single line of output with the job ID, username, and state, separated by pipe characters. The output might look like:</div>
 
 ```
@@ -168,6 +169,7 @@ This will return a single line of output with the job ID, username, and state, s
 <div align="justify">
 In these examples, remember to replace <code>123456</code> with the ID of your job, and <code>myuser</code> with your username. The full list of format specifiers and options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.</div>
 
+<br> <!-- Blank line -->
 ## sacct
 <div align="justify">
 The <code>sacct</code> command provides accounting data for all jobs and job steps in the SLURM workload manager. It's a treasure trove of information about your job's performance, offering insights into resource usage and time spent on different stages.</div>
@@ -211,7 +213,7 @@ Here is a sample output:
 The full list of format options can be found in the <a href="https://slurm.schedmd.com/squeue.html">SLURM documentation</a>.
 
 ## seff
-<div align="justify">
+<div align="justify" class="text">
 <code>seff</code> provides a brief summary of the efficiency of your job. Although it's not part of the default SLURM installation, it's widely used due to its effectiveness.</div>
 
 ```bash
@@ -236,13 +238,15 @@ Memory Efficiency: 25.00% of 400.00 MB
 <div align="justify">
 This output provides an overall picture of how efficiently your job utilized the allocated resources, which can be crucial in optimizing your application for an HPC environment. The use of these commands will give you a good understanding of how your job is performing and where there might be room for improvement.</div>
 
-## scontrol
-<div align="justify">
-<code>scontrol</code> is a utility provided by SLURM for administrative tasks, but it also has several functions that can be useful for users. One of these is the ability to display detailed information about a specific job. For example:</div>
 <br> <!-- Blank line -->
+## scontrol
+<div align="justify" class="text">
+<code>scontrol</code> is a utility provided by SLURM for administrative tasks, but it also has several functions that can be useful for users. One of these is the ability to display detailed information about a specific job. For example:</div>
+
 ```bash
 scontrol show job 123456
 ```
+
 <div align="justify">
 This command will show a detailed description of the job with ID 123456, including the time it was submitted, its current state, the partition it's running in, the resources it's using, and many other details. </div>
 
@@ -259,8 +263,9 @@ JobId=123456 JobName=pi_estim
 <div align="justify">
 Note: The output of <code>scontrol show job</code> is quite long and has been truncated for brevity. To see all the information, run this command yourself with one of your job IDs.</div>
 
+<br> <!-- Blank line -->
 ## sinfo
-<div align="justify">
+<div align="justify" class="text">
 While <code>sinfo</code> is more typically used to display information about nodes and partitions, it can also be used to monitor the resources being used by jobs in real-time. For example:</div>
 
 ```bash
