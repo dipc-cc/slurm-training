@@ -31,9 +31,8 @@ Let's say you've just submitted your Pi estimation job, and you're keen to check
 ```bash
 squeue -u $USER
 ```
-<div align="justify">
+<div align="justify" class="text">
 The <code>-u</code> flag followed by <code>$USER</code> allows you to filter the jobs belonging to your user. The output will be a table listing your jobs:</div>
-<br> <!-- Blank line -->
 ```
   JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
 123456     debug pi_estim  username  R       0:25      1 node007
