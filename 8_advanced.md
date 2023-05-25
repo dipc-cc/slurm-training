@@ -8,7 +8,7 @@ nav: true
 }
 </style>
 
-# advanced
+# Advanced
 
 ## Scalability experiments
 
