@@ -108,8 +108,6 @@ You may find that a scalability graph may vary if you ran the same code on a dif
   </p>
   <div class="additional-info-toggle">Solution</div>
   <div class="additional-info">
-   <p>
-     
    <ol>
 	<li>No, the performance is still increasing, at this point we are no longer achieving perfect scalability.</li>
     	<li>Yes, the performance peaks at this location, and one cannot get higher speed up with this set up.</li>
@@ -118,7 +116,6 @@ You may find that a scalability graph may vary if you ran the same code on a dif
    <ol> 
 
 In response to option #4, if you produce scalability studies on different machines, they will be different because of the varying setups and hardware configurations of the machines. It is highly unlikely to obtain two identical scalability studies, but they may agree to some extent.
-   </p>
   </div>
 </div>
 
