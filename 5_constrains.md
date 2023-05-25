@@ -30,7 +30,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <th>MaxSubmitPU</th>
     <th>MaxTRES</th>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>regular</td>
     <td>200</td>
     <td>1-00:00:00</td>
@@ -48,7 +48,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td>2</td>
     <td></td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>long</td>
     <td>200</td>
     <td>2-00:00:00</td>
@@ -66,7 +66,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>large</td>
     <td>200</td>
     <td>2-00:00:00</td>
@@ -84,7 +84,7 @@ In an HPC (High-Performance Computing) environment, imposing constraints plays a
     <td></td>
     <td></td>
   </tr>
-  <tr>
+  <tr style="border-bottom: 1px solid black;">
     <td>serial</td>
     <td>200</td>
     <td>2-00:00:00</td>
