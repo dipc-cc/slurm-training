@@ -78,25 +78,16 @@ In conclusion, scaling experiments are vital for understanding code scalability 
   <p>
     Consider the following scalability plot for a random application.
 
-At what point would you consider to be peak performance in this example.
+    At what point would you consider to be peak performance in this example?
 
-    1. The point where performance gains are no longer linear
-    2. The apex of the curve
-    3. The maximum core count
-    4. None of the above
+    <ol>
+      <li>The point where performance gains are no longer linear</li>
+      <li>The apex of the curve</li>
+      <li>The maximum core count</li>
+      <li>None of the above</li>
+    </ol>
 
-You may find that a scalability graph my vary if you ran the same code on a different machine. Why? 
-## collapsible markdown?
-
-<details><summary>CLICK ME</summary>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-```
-
-</details>
+    You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
   </p>
 </div>
 
