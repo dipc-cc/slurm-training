@@ -116,3 +116,57 @@ You may find that a scalability graph my vary if you ran the same code on a diff
 <div align="justify" class="text">
 In conclusion, scaling experiments are vital for understanding code scalability and parallel performance. They inform optimization efforts and support resource allocation requests. Visualizations aid in communicating results effectively.
 </div>
+
+
+
+<style>
+  .outer-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .inner-box {
+    background-color: #e9e9e9;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
+<div class="outer-box">
+  <h3>Outer Box</h3>
+  
+  <div class="inner-box">
+    <h4>Inner Box</h4>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="#">Option 1</a>
+        <a href="#">Option 2</a>
+        <a href="#">Option 3</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
