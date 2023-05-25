@@ -32,20 +32,22 @@ seff <job_id>
 ## Scalability experiments
 
 <div align="justify" class="text">
-Scalability, in the context of parallel computing, refers to the ability to handle larger workloads as the size of a computer application grows. It is a fundamental concept that indicates the capability of both hardware and software to deliver increased computational power when additional resources are allocated. When working with high-performance computing (HPC) systems, ensuring scalability is crucial to maintaining performance as the number of cores or nodes assigned to a series of tasks increases.</div>
+Scaling experiments are crucial for assessing code scalability and parallel performance. They involve systematically varying computational resources to gain insights into code behavior under different workloads. These experiments provide valuable information, identify limitations, and drive improvements.
+</div>
 
 <div align="justify" class="text">
-Parallel computing allows for the simultaneous execution of multiple tasks across distributed processors, resulting in faster code execution. On HPC systems, an efficiently parallelized code can accomplish tasks in minutes that would otherwise take days or even years on a single processor. However, not all code is amenable to effective scaling on HPC systems. Many codes contain inherent serial components that cannot be divided among processors, leading to diminished speedup if these components represent a significant portion of the code. Additionally, challenges such as memory and communication bottlenecks can hinder parallelization and negatively impact performance, although these issues may not be immediately apparent.</div>
+Results serve two key purposes. Firstly, they diagnose code performance by analyzing execution times and speedup as resources increase. This helps identify bottlenecks and optimize code for better performance.
+</div>
 
 <div align="justify" class="text">
-To assess the parallel performance of a code, scaling experiments are conducted. These experiments serve two purposes: as a diagnostic tool to analyze code performance and as evidence of code scalability when requesting allocations on HPC systems. Allocation programs like NSF's XSEDE often require scaling information to evaluate code performance for resource allocation. Scaling analysis provides insights into the efficiency of parallelization, quantified by the ratio between the actual speedup achieved and the ideal speedup expected with a given number of processes.</div>
-
-:::info box
-This is a infobox :-)
-:::
-
+Secondly, scaling results are necessary for resource allocation requests. Funding agencies require evidence of code scalability and performance to assess resource requirements and potential impact.
+</div>
 
 <div align="justify" class="text">
-In summary, achieving scalability in parallel computing is essential for handling larger workloads and maintaining performance. It involves effectively distributing tasks across processors, considering the limitations of serial components, and addressing bottlenecks. Scaling experiments play a vital role in understanding code performance and are often used to support allocation requests for HPC resources.</div>
+Visualizations like speedup and efficiency plots effectively present scaling results. They illustrate execution time improvement and resource utilization effectiveness.
+</div>
 
+<div align="justify" class="text">
+In conclusion, scaling experiments are vital for understanding code scalability and parallel performance. They inform optimization efforts and support resource allocation requests. Visualizations aid in communicating results effectively.
+</div>
 
