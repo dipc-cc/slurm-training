@@ -81,3 +81,35 @@ Visualizations like speedup and efficiency plots effectively present scaling res
 In conclusion, scaling experiments are vital for understanding code scalability and parallel performance. They inform optimization efforts and support resource allocation requests. Visualizations aid in communicating results effectively.
 </div>
 
+
+
+<style>
+  .info-box {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border: 1px solid #e6eaf2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0085ff;
+  }
+  
+  .info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+</style>
+
+<div class="info-box">
+  <h3>Determine best performance from a scalability study</h3>
+  <p>
+    A scalability study allows you to assess the performance of your code as the workload increases. By varying the computational resources, such as the number of processes or cores, you can measure how your code scales and identify any bottlenecks or limitations.
+  </p>
+</div>
+
+
