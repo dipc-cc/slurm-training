@@ -160,6 +160,7 @@ salloc --ntasks=4 --time=01:00:00 bash pi_estimation.sh exit
 The <code>salloc</code> command allocates resources (in this case, 4 tasks for a duration of one hour) and starts a shell. In that shell, you can then directly execute the <code>pi_estimation.sh</code> script. Once you're done, don't forget to type <code>exit</code> to release the allocation.
 </div>
 
+<br> <!-- Blank line -->
 ## Direct job step execution with srun
 
 <div align="justify">
