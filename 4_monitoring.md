@@ -16,12 +16,11 @@ Absolutely. Here's a more comprehensive version of the `squeue` section.
 
 ## squeue
 <div align="justify">
-Think of `squeue` as your immediate source of information about your jobs. The `squeue` command displays information about jobs located in the SLURM scheduling queue. 
+Think of <code>squeue</code> as your immediate source of information about your jobs. The <code>squeue</code> command displays information about jobs located in the SLURM scheduling queue. 
 </div>
 <div align="justify">
 Let's say you've just submitted your Pi estimation job, and you're keen to check its status. Here's how to do it:
 </div>
-<br> <!-- Blank line -->
 ```bash
 squeue -u $USER
 ```
