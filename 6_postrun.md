@@ -120,3 +120,81 @@ You may find that a scalability graph may vary if you ran the same code on a dif
   });
 </script>
 
+
+
+
+# SECOND BOX
+
+<style>
+  .info-box {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border: 1px solid #e6eaf2;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0085ff;
+  }
+
+  .info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .info-box .additional-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e6eaf2;
+    border-radius: 4px;
+    display: none; /* Collapsed by default */
+  }
+
+  .info-box .additional-info-toggle {
+    cursor: pointer;
+    color: #0085ff;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+</style>
+
+<div class="info-box">
+  <h3>Determine best performance from a scalability study</h3>
+  <p>
+    Consider the following scalability plot for a random application.
+
+    At what point would you consider to be peak performance in this example?
+
+    <ol>
+      <li>The point where performance gains are no longer linear</li>
+      <li>The apex of the curve</li>
+      <li>The maximum core count</li>
+      <li>None of the above</li>
+    </ol>
+
+    You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
+  </p>
+  <div class="additional-info-toggle">Show Additional Information</div>
+  <div class="additional-info">
+    <h3>Additional Information</h3>
+    <p>
+      In response to option #4, if you produce scalability studies on different machines, they will be different because of the varying setups and hardware configurations of the machines. It is highly unlikely to obtain two identical scalability studies, but they may agree to some extent.
+    </p>
+  </div>
+</div>
+
+<script>
+  var additionalInfoToggle = document.querySelector('.additional-info-toggle');
+  var additionalInfo = document.querySelector('.additional-info');
+
+  additionalInfoToggle.addEventListener('click', function() {
+    additionalInfo.style.display = (additionalInfo.style.display === 'none') ? 'block' : 'none';
+    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Additional Information' : 'Hide Additional Information';
+  });
+</script>
+
