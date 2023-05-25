@@ -118,7 +118,6 @@ In conclusion, scaling experiments are vital for understanding code scalability 
 </div>
 
 
-
 <style>
   .outer-box {
     background-color: #f2f2f2;
@@ -151,6 +150,14 @@ In conclusion, scaling experiments are vital for understanding code scalability 
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  
+  .dropdown-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+  }
 </style>
 
 <div class="outer-box">
@@ -161,12 +168,17 @@ In conclusion, scaling experiments are vital for understanding code scalability 
     <div class="dropdown">
       <button class="dropbtn">Dropdown</button>
       <div class="dropdown-content">
-        <a href="#">Option 1</a>
-        <a href="#">Option 2</a>
-        <a href="#">Option 3</a>
+        <div class="dropdown-box">
+          Box 1
+        </div>
+        <div class="dropdown-box">
+          Box 2
+        </div>
+        <div class="dropdown-box">
+          Box 3
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 
