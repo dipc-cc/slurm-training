@@ -18,6 +18,7 @@ Once the work is finished we should move the generated data to our home director
 1. The **scrath is not backed up**, so in case there is a problem with the filesystem, the stored data will be lost.
 2. The /scratch file system is designed for performance rather than reliability. When the occupancy goes above 80% the BeeGFS filesystem shows a performance degradation that affects **all users**.
 
+<br> <!-- Blank line -->
 ## Analyzing job performance with seff
 
 <div align="justify" class="text">
@@ -28,13 +29,23 @@ seff <job_id>
 ```
 
 <br> <!-- Blank line -->
-## Scaling experiments
+## Scalability experiments
 
 <div align="justify" class="text">
-Parallel computing allows us to speed up code by performing multiple tasks simultaneously across a distributed set of processors. On high performance computing (HPC) systems, an efficient parallel code can accomplish in minutes what might take days or even years to perform on a single processor. Not all code will scale well on HPC systems however. Most code has inherently serial components that cannot be divided among processors. If the serial component is a large segment of a code, the speedup gained from parallelization will greatly diminish. Memory and communication bottlenecks also present challenges to parallelization, and their impact on performance may not be readily apparent.</div>
+Scalability, in the context of parallel computing, refers to the ability to handle larger workloads as the size of a computer application grows. It is a fundamental concept that indicates the capability of both hardware and software to deliver increased computational power when additional resources are allocated. When working with high-performance computing (HPC) systems, ensuring scalability is crucial to maintaining performance as the number of cores or nodes assigned to a series of tasks increases.</div>
 
 <div align="justify" class="text">
-To measure the parallel performance of a code, we perform scaling experiments. Scaling experiments are useful as 1) a diagnostic tool to analyze performance of your code and 2) a evidence of code performance that can be used when requesting allocations on HPC systems (for example, NSF’s XSEDE program requires scaling information when requesting allocations). In this post I’ll outline the basics for performing scaling analysis of your code and discuss how these results are often presented in allocation applications.</div>
+Parallel computing allows for the simultaneous execution of multiple tasks across distributed processors, resulting in faster code execution. On HPC systems, an efficiently parallelized code can accomplish tasks in minutes that would otherwise take days or even years on a single processor. However, not all code is amenable to effective scaling on HPC systems. Many codes contain inherent serial components that cannot be divided among processors, leading to diminished speedup if these components represent a significant portion of the code. Additionally, challenges such as memory and communication bottlenecks can hinder parallelization and negatively impact performance, although these issues may not be immediately apparent.</div>
 
+<div align="justify" class="text">
+To assess the parallel performance of a code, scaling experiments are conducted. These experiments serve two purposes: as a diagnostic tool to analyze code performance and as evidence of code scalability when requesting allocations on HPC systems. Allocation programs like NSF's XSEDE often require scaling information to evaluate code performance for resource allocation. Scaling analysis provides insights into the efficiency of parallelization, quantified by the ratio between the actual speedup achieved and the ideal speedup expected with a given number of processes.</div>
+
+:::info box
+This is a infobox :-)
+:::
+
+
+<div align="justify" class="text">
+In summary, achieving scalability in parallel computing is essential for handling larger workloads and maintaining performance. It involves effectively distributing tasks across processors, considering the limitations of serial components, and addressing bottlenecks. Scaling experiments play a vital role in understanding code performance and are often used to support allocation requests for HPC resources.</div>
 
 
