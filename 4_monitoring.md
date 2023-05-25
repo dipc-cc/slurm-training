@@ -4,8 +4,8 @@ nav: true
 ---
 
 <style>
-.code {
-  margin-top: 10px;
+.text {
+  margin-bottom: 10px;
 }
 </style>
 
@@ -25,7 +25,7 @@ Absolutely. Here's a more comprehensive version of the `squeue` section.
 <div align="justify">
 Think of <code>squeue</code> as your immediate source of information about your jobs. The <code>squeue</code> command displays information about jobs located in the SLURM scheduling queue. 
 </div>
-<div align="justify">
+<div align="justify" style=text>
 Let's say you've just submitted your Pi estimation job, and you're keen to check its status. Here's how to do it:
 </div>
 ```bash
