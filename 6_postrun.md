@@ -47,6 +47,9 @@ Secondly, scaling results are necessary for resource allocation requests. Fundin
 Visualizations like speedup and efficiency plots effectively present scaling results. They illustrate execution time improvement and resource utilization effectiveness.
 </div>
 
+<div align="justify" class="text">
+In conclusion, scaling experiments are vital for understanding code scalability and parallel performance. They inform optimization efforts and support resource allocation requests. Visualizations aid in communicating results effectively. 
+</div>
 
 <style>
   .info-box {
@@ -83,102 +86,89 @@ At what point would you consider to be peak performance in this example.
     4. None of the above
 
 You may find that a scalability graph my vary if you ran the same code on a different machine. Why? 
+## collapsible markdown?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
   </p>
 </div>
 
 
 <style>
-  .outer-box {
-    background-color: #f2f2f2;
+  .info-box {
+    background-color: #f0f8ff;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #e6eaf2;
     border-radius: 4px;
+    margin-bottom: 20px;
   }
-  
-  .inner-box {
-    background-color: #e9e9e9;
+
+  .info-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0085ff;
+  }
+
+  .info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .info-box .additional-info {
+    margin-top: 20px;
     padding: 10px;
-    border: 1px solid #999;
-    border-radius: 4px;
-  }
-</style>
-
-<div class="outer-box">
-  <h3>Outer Box</h3>
-  
-  <div class="inner-box">
-    <h4>Inner Box</h4>
-    <p>This is the content inside the inner box.</p>
-  </div>
-</div>
-
-
-<div align="justify" class="text">
-In conclusion, scaling experiments are vital for understanding code scalability and parallel performance. They inform optimization efforts and support resource allocation requests. Visualizations aid in communicating results effectively.
-</div>
-
-
-<style>
-  .outer-box {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .inner-box {
-    background-color: #e9e9e9;
-    padding: 10px;
-    border: 1px solid #999;
-    border-radius: 4px;
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown-box {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 5px;
     background-color: #f9f9f9;
+    border: 1px solid #e6eaf2;
+    border-radius: 4px;
+    display: none; /* Collapsed by default */
+  }
+
+  .info-box .additional-info-toggle {
+    cursor: pointer;
+    color: #0085ff;
+    font-weight: bold;
+    text-decoration: underline;
   }
 </style>
 
-<div class="outer-box">
-  <h3>Outer Box</h3>
-  
-  <div class="inner-box">
-    <h4>Inner Box</h4>
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-        <div class="dropdown-box">
-          Box 1
-        </div>
-        <div class="dropdown-box">
-          Box 2
-        </div>
-        <div class="dropdown-box">
-          Box 3
-        </div>
-      </div>
-    </div>
+<div class="info-box">
+  <h3>Determine best performance from a scalability study</h3>
+  <p>
+    Consider the following scalability plot for a random application.
+
+At what point would you consider to be peak performance in this example.
+
+    1. The point where performance gains are no longer linear
+    2. The apex of the curve
+    3. The maximum core count
+    4. None of the above
+
+You may find that a scalability graph may vary if you ran the same code on a different machine. Why?
+  </p>
+  <div class="additional-info-toggle">Show Additional Information</div>
+  <div class="additional-info">
+    <h3>Additional Information</h3>
+    <p>
+      In response to option #4, if you produce scalability studies on different machines, they will be different because of the varying setups and hardware configurations of the machines. It is highly unlikely to obtain two identical scalability studies, but they may agree to some extent.
+    </p>
   </div>
 </div>
+
+<script>
+  document.querySelector('.additional-info-toggle').addEventListener('click', function() {
+    var additionalInfo = document.querySelector('.additional-info');
+    additionalInfo.style.display = (additionalInfo.style.display === 'none') ? 'block' : 'none';
+    this.textContent = (additionalInfo.style.display === 'none') ? 'Show Additional Information' : 'Hide Additional Information';
+  });
+</script>
 
