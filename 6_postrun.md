@@ -54,7 +54,6 @@ In conclusion, scaling experiments are vital for understanding code scalability 
 
 
 
-
 <style>
   .info-box {
     background-color: #f0f8ff;
@@ -120,7 +119,7 @@ You may find that a scalability graph may vary if you ran the same code on a dif
   var additionalInfo = document.querySelector('.additional-info');
 
   additionalInfoToggle.addEventListener('click', function() {
-    if (additionalInfo.style.display === 'none') {
+    if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
       additionalInfo.style.display = 'block';
       additionalInfoToggle.textContent = 'Hide Additional Information';
     } else {
@@ -130,3 +129,4 @@ You may find that a scalability graph may vary if you ran the same code on a dif
   });
 </script>
 
+Hola
