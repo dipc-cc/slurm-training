@@ -50,9 +50,8 @@ Here You have some usefull sbatch script examples.
 <div class="info-box">
   <div class="additional-info-toggle">Serial Run</div>
   <div class="additional-info">
-```bash
+
 Here We have the bash script
-```
 
 <script>
   var additionalInfoToggle = document.querySelector('.additional-info-toggle');
