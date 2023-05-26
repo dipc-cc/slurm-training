@@ -55,6 +55,7 @@ echo "Running serial job..."
   </div>
 </div>
 
+
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Job Array</h3>
   <div class="content">
@@ -75,6 +76,31 @@ echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
 </pre>
   </div>
 </div>
+
+
+<div class="info-box">
+  <h3 onclick="toggleInfoBox(this)">Dependency chains</h3>
+Job dependencies are used to defer the start of a job until some dependencies have been satisfied. Job dependencies can be defined using the <code>--dependency</code> argument of the <code>sbatch</code> command:
+  <div class="content">
+      <pre>
+#!/bin/bash
+#SBATCH --partition=regular
+#SBATCH --job-name=ARRAY_JOB
+#SBATCH --time=00:10:00
+#SBATCH --nodes=1              # nodes per instance
+#SBATCH --ntasks=1             # tasks per instance
+#SBATCH --array=0-9           # instance indexes
+#SBATCH --output=%x-%j.out
+#SBATCH --error=%x-%j.err
+
+echo "Slurm job id is ${SLURM_JOB_ID}"
+echo "Array job id is ${SLURM_ARRAY_JOB_ID}"
+echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
+</pre>
+  </div>
+</div>
+
+
 
 <script>
   function toggleInfoBox(element) {
