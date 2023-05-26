@@ -8,7 +8,6 @@ nav: true
 Here I have the new usefull sbatch script examples.
 
 
-
 <style>
   .info-box {
     background-color: #f0f8ff;
@@ -24,14 +23,14 @@ Here I have the new usefull sbatch script examples.
     margin-bottom: 10px;
     color: #0085ff;
     cursor: pointer;
-    font-family: inherit;
+    font-family: Helvetica, sans-serif; /* Set your desired regular font here */
   }
 
   .info-box p {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    font-family: inherit;
+    font-family: Courier, monospace;
   }
 
   .info-box .content {
@@ -56,4 +55,3 @@ Here I have the new usefull sbatch script examples.
     }
   }
 </script>
-
