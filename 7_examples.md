@@ -5,7 +5,7 @@ nav: true
 
 # Examples
 
-Here I have the new usefull sbatch script examples.
+Here we collect different usefull sbatch script examples.
 
 
 <style>
@@ -57,6 +57,49 @@ echo "Running serial job..."
 </div>
 
 
+<div class="info-box">
+  <h3 onclick="toggleInfoBox(this)">MPI</h3>
+  <div class="content">
+<p><span style="font-family: Helvetica, Arial, sans-serif;"> MPI (Message Passing Interface) is a parallel programming model for distributed memory systems. It enables programs to run across multiple processors, communicating via message passing. </span></p>
+<pre>
+#!/bin/bash
+#SBATCH --partition=regular
+#SBATCH --job-name=JOB_NAME
+#SBATCH --cpus-per-task=1
+#SBATCH --mem=200gb
+#SBATCH --nodes=8
+#SBATCH --ntasks-per-node=48
+
+module load program/program_version
+
+mpirun -np $SLURM_NTASKS binaryi < input 
+</pre>
+  </div>
+</div>
+
+
+
+<div class="info-box">
+  <h3 onclick="toggleInfoBox(this)">OpenMP</h3>
+  <div class="content">
+<p><span style="font-family: Helvetica, Arial, sans-serif;"> For a OpenMP application the number of threads can be controlled defining the <code>OMP_NUM_THREADS</code> or SLURM's <code>--cpus-per-task</code> job directive. If this variable is not defined, the number of threads created will be equal to the amount of cores reserved in your cpuset, that is, the number of cores requested in the batch script. </span></p>
+<pre>
+#!/bin/bash
+#SBATCH --partition=regular
+#SBATCH --job-name=JOB_NAME
+#SBATCH --cpus-per-task=48
+#SBATCH --mem=200gb
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+
+module load program/program_version
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+
+binary < input
+</pre>
+  </div>
+</div>
 
 
 
