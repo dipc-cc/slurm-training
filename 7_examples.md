@@ -81,7 +81,7 @@ echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Dependency chains</h3>
   <div class="content">
-Job dependencies are used to defer the start of a job until some dependencies have been satisfied. Job dependencies can be defined using the <code>--dependency</code> argument of the <code>sbatch</code> command:
+    <p><span style="font-family: Helvetica, Arial, sans-serif;">Job dependencies are used to defer the start of a job until some dependencies have been satisfied. Job dependencies can be defined using the --dependency argument of the sbatch command:</span></p>
       <pre>
 #!/bin/bash
 #SBATCH --partition=regular
