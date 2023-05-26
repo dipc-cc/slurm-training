@@ -39,9 +39,19 @@ Here I have the new usefull sbatch script examples.
 </style>
 
 <div class="info-box">
-  <h3 onclick="toggleInfoBox(this)">Click to toggle</h3>
+  <h3 onclick="toggleInfoBox(this)">Serial</h3>
   <div class="content">
-    <p>This is the information inside the box.</p>
+      <pre>
+#!/bin/bash
+#SBATCH --job-name=my_serial_job
+#SBATCH --output=output.log
+#SBATCH --error=error.log
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+
+echo "Running serial job..."
+# Your serial job commands go here
+    </pre>
   </div>
 </div>
 
