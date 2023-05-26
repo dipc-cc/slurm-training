@@ -41,7 +41,8 @@ Here I have the new usefull sbatch script examples.
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Click to toggle</h3>
   <div class="content">
-    <p>This is the information inside the box.</p>
+    <p>#!/bin/bash
+    #SBATCH --partition=serial</p>
   </div>
 </div>
 
