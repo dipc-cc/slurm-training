@@ -51,7 +51,11 @@ Here You have some usefull sbatch script examples.
   <div class="additional-info-toggle">Serial Run</div>
   <div class="additional-info">
 
+<code>
 Here We have the bash script
+#SBATCH Hello
+#SBATCH World
+</code>
 
 <script>
   var additionalInfoToggle = document.querySelector('.additional-info-toggle');
