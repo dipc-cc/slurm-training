@@ -101,7 +101,26 @@ binary < input
   </div>
 </div>
 
+<div class="info-box">
+  <h3 onclick="toggleInfoBox(this)">Hybrid (MPI+OpenMP)</h3>
+  <div class="content">
+<p><span style="font-family: Helvetica, Arial, sans-serif;"> Hybrid parallelization, combining MPI (Message Passing Interface) and OpenMP, is a powerful approach for harnessing the computational capabilities of both distributed and shared memory systems. In this paradigm, MPI is used for inter-node communication, enabling data exchange and synchronization between distributed processes, while OpenMP is employed within each node for intra-node parallelization across multiple threads. </span></p>
+<pre>
+#!/bin/bash
+#SBATCH --partition=regular
+#SBATCH --job-name=JOB_NAME
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=200gb
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=12
 
+module load program/program_version
+
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+mpirun -np $SLURM_NTASKS binaryi < input
+</pre>
+  </div>
+</div>
 
 
 <div class="info-box">
