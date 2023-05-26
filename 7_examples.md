@@ -5,7 +5,8 @@ nav: true
 
 # Examples
 
-Here You have some usefull sbatch script examples.
+Here I have the new usefull sbatch script examples.
+
 
 <style>
   .info-box {
@@ -35,6 +36,7 @@ Here You have some usefull sbatch script examples.
     border: 1px solid #e6eaf2;
     border-radius: 4px;
     display: none; /* Collapsed by default */
+    font-family: Courier, monospace;
   }
 
   .info-box .additional-info-toggle {
@@ -45,32 +47,29 @@ Here You have some usefull sbatch script examples.
   }
 </style>
 
-
-
 <div class="info-box">
   <div class="additional-info-toggle">Serial Run</div>
   <div class="additional-info">
-
-<code>
+    <pre><code>
 Here We have the bash script
 #SBATCH Hello
 #SBATCH World
-</code>
+    </code></pre>
+  </div>
 
-<script>
-  var additionalInfoToggle = document.querySelector('.additional-info-toggle');
-  var additionalInfo = document.querySelector('.additional-info');
+  <script>
+    var additionalInfoToggle = document.querySelector('.additional-info-toggle');
+    var additionalInfo = document.querySelector('.additional-info');
 
-  additionalInfoToggle.addEventListener('click', function() {
-    if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
-      additionalInfo.style.display = 'block';
-      additionalInfoToggle.textContent = 'Serial Run';
-    } else {
-      additionalInfo.style.display = 'none';
-      additionalInfoToggle.textContent = 'Serial Run';
-    }
-  });
-</script>
-
-
+    additionalInfoToggle.addEventListener('click', function() {
+      if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
+        additionalInfo.style.display = 'block';
+        additionalInfoToggle.textContent = 'Serial Run';
+      } else {
+        additionalInfo.style.display = 'none';
+        additionalInfoToggle.textContent = 'Serial Run';
+      }
+    });
+  </script>
+</div>
 
