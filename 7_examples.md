@@ -5,6 +5,8 @@ nav: true
 
 # Examples
 
+Here You have some usefull sbatch script examples.
+
 <style>
   .info-box {
     background-color: #f0f8ff;
@@ -46,7 +48,7 @@ nav: true
 
 
 <div class="info-box">
-  <div class="additional-info-toggle">Show Solution</div>
+  <div class="additional-info-toggle">Serial Run</div>
   <div class="additional-info">
 ```bash
 Here We have the bash script
@@ -59,10 +61,10 @@ Here We have the bash script
   additionalInfoToggle.addEventListener('click', function() {
     if (additionalInfo.style.display === 'none' || additionalInfo.style.display === '') {
       additionalInfo.style.display = 'block';
-      additionalInfoToggle.textContent = 'Hide Solution';
+      additionalInfoToggle.textContent = 'Serial Run';
     } else {
       additionalInfo.style.display = 'none';
-      additionalInfoToggle.textContent = 'Show Solution';
+      additionalInfoToggle.textContent = 'Serial Run';
     }
   });
 </script>
