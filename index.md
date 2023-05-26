@@ -36,19 +36,21 @@ Welcome to the SLURM training session! We're thrilled to have you join us for th
 </table>
 
 
-
+<br> <!-- Blank line -->
 ## Venue
 
 <div align="justify">
 The training session will be held at the DIPC's main auditorium and simultaneously streamed live on Zoom for remote participants. Login details for the virtual session will be shared via email closer to the event. Please note that the number of seats at the auditorium is limited. If you wish to attend the session in person, please send an email to dipc-scc-training@dipc.org to reserve your spot. Reservations will be granted on a first-come-first-serve basis.
 </div>
 
+<br> <!-- Blank line -->
 ## Course Materials
 
 <div align="justify">
 All the course materials, including the scripts used in the examples, will be made available on the course GitHub repository. We highly recommend cloning the repository and following along with the examples during the session.
 </div>
 
+<br> <!-- Blank line -->
 ## Schedule
 
 The training session will be conducted as per the following schedule:
