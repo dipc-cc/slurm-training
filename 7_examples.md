@@ -43,7 +43,24 @@ Here I have the new usefull sbatch script examples.
   <div class="content">
       <pre>
 #!/bin/bash
-#SBATCH --job-name=my_serial_job
+#SBATCH --job-name=serial_job
+#SBATCH --output=output.log
+#SBATCH --error=error.log
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+
+echo "Running serial job..."
+# Your serial job commands go here
+    </pre>
+  </div>
+</div>
+
+<div class="info-box">
+  <h3 onclick="toggleInfoBox(this)">Seriali-2.0</h3>
+  <div class="content">
+      <pre>
+#!/bin/bash
+#SBATCH --job-name=second_serial_job
 #SBATCH --output=output.log
 #SBATCH --error=error.log
 #SBATCH --nodes=1
