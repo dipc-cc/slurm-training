@@ -31,6 +31,7 @@ Here I have the new usefull sbatch script examples.
     font-size: 16px;
     line-height: 1.5;
     color: #333;
+    font-family: inherit;
   }
 
   .info-box .content {
@@ -41,8 +42,7 @@ Here I have the new usefull sbatch script examples.
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Click to toggle</h3>
   <div class="content">
-    <p>#!/bin/bash
-    #SBATCH --partition=serial</p>
+    <p>This is the information inside the box.</p>
   </div>
 </div>
 
