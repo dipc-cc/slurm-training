@@ -41,7 +41,8 @@ Here I have the new usefull sbatch script examples.
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Serial</h3>
   <div class="content">
-      <pre>
+<p><span style="font-family: Helvetica, Arial, sans-serif;"> Serial jobs are tasks that run sequentially on a single processor without parallelization. They are used for workloads that can't be easily parallelized or don't benefit from parallel processing. </span></p>      
+<pre>
 #!/bin/bash
 #SBATCH --job-name=serial_job
 #SBATCH --output=output.log
@@ -56,9 +57,37 @@ echo "Running serial job..."
 </div>
 
 
+
+
+
+
+<div class="info-box">
+  <h3 onclick="toggleInfoBox(this)">GPU jobs</h3>
+  <div class="content">
+<p><span style="font-family: Helvetica, Arial, sans-serif;">GPU jobs refer to tasks or applications that utilize the computational power of Graphics Processing Units (GPUs) for accelerated processing. GPU jobs are commonly used for deep learning, scientific simulations, data analytics, and other computationally intensive tasks that can benefit from parallel processing on GPUs. By leveraging the power of GPUs, these jobs can achieve significant performance gains compared to running on CPUs alone.One can request the usage of GPUs by adding <code>#SBATCH --gres=gpu:p40:X</code> to the submision script. In the following example we request 2 GPUs per node </span></p>
+<pre>
+#!/bin/bash
+#SBATCH --partition=regular
+#SBATCH --job-name=GROMACS_job
+#SBATCH --mem=200gb
+#SBATCH --cpus-per-task=1
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=8
+#SBATCH --gres=gpu:p40:2
+#SBATCH --output=%x-%j.out
+#SBATCH --error=%x-%j.err
+
+module load GROMACS/2020-fosscuda-2019b
+
+srun gmx_mpi mdrun -ntomp $SLURM_CPUS_PER_TASK -nb auto -bonded auto -pme auto -gpu_id 01 -s input.tpr
+</pre>
+  </div>
+</div>
+
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Job Array</h3>
   <div class="content">
+<p><span style="font-family: Helvetica, Arial, sans-serif;">SLURM job arrays allow users to submit and manage a group of related jobs as a single entity. A job array consists of multiple tasks that are similar in nature but have different input data or parameters. SLURM handles the task distribution, resource allocation, and job dependencies automatically. They simplify job submission and management, improve efficiency, and provide better control over large-scale job execution in HPC environments. </span></p> 
       <pre>
 #!/bin/bash
 #SBATCH --partition=regular
@@ -81,7 +110,10 @@ echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
 <div class="info-box">
   <h3 onclick="toggleInfoBox(this)">Dependency chains</h3>
   <div class="content">
-    <p><span style="font-family: Helvetica, Arial, sans-serif;">Job dependencies are used to defer the start of a job until some dependencies have been satisfied. Job dependencies can be defined using the --dependency argument of the sbatch command:</span></p>
+   <p><span style="font-family: Helvetica, Arial, sans-serif;">Job dependencies are used to defer the start of a job until some dependencies have been satisfied. Job dependencies can be defined using the <code>--dependency</code> argument of the <code>sbatch</code> command: #SBATCH --dependency="dependency_type"
+Available dependencies are:
+- after
+- afterany</span></p>
       <pre>
 #!/bin/bash
 #SBATCH --partition=regular
