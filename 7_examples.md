@@ -56,19 +56,23 @@ echo "Running serial job..."
 </div>
 
 <div class="info-box">
-  <h3 onclick="toggleInfoBox(this)">Seriali-2.0</h3>
+  <h3 onclick="toggleInfoBox(this)">Job Array</h3>
   <div class="content">
       <pre>
 #!/bin/bash
-#SBATCH --job-name=second_serial_job
-#SBATCH --output=output.log
-#SBATCH --error=error.log
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
+#SBATCH --partition=regular
+#SBATCH --job-name=ARRAY_JOB
+#SBATCH --time=00:10:00
+#SBATCH --nodes=1              # nodes per instance
+#SBATCH --ntasks=1             # tasks per instance
+#SBATCH --array=0-9           # instance indexes
+#SBATCH --output=%x-%j.out
+#SBATCH --error=%x-%j.err
 
-echo "Running serial job..."
-# Your serial job commands go here
-    </pre>
+echo "Slurm job id is ${SLURM_JOB_ID}"
+echo "Array job id is ${SLURM_ARRAY_JOB_ID}"
+echo "Instance index is ${SLURM_ARRAY_TASK_ID}."    
+</pre>
   </div>
 </div>
 
