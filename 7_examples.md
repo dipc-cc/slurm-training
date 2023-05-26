@@ -142,8 +142,6 @@ echo "Slurm job id is ${SLURM_JOB_ID}"
 echo "Array job id is ${SLURM_ARRAY_JOB_ID}"
 echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
 </pre>
-  </div>
-</div>
 
 
 
