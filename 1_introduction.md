@@ -12,6 +12,7 @@ In the modern era of research, High-Performance Computing (HPC) has emerged as a
 However, to maximize the utility of an HPC system and ensure its resources are used efficiently, we require a mechanism that can manage, allocate, and schedule computational tasks. This is where workload managers, or job schedulers, step in.
 </div>
 
+<br> <!-- Blank line -->
 ## Role and Importance of Workload Managers
 <div align="justify">
 Workload managers orchestrate the computational tasks, also known as jobs, on the computing nodes within an HPC cluster. They are the conductors of the HPC symphony, optimizing the allocation of the system's resources. 
@@ -28,7 +29,6 @@ In contrast, a workload manager automates these tasks and provides several signi
 2. **Fairness**: It manages job priorities based on factors such as user quotas and job sizes, ensuring that all users get their fair share of the system resources.
 3. **Ease of Use**: It provides users with commands to submit jobs, check their status, and cancel them if necessary. This makes it much easier for users to interact with the HPC system.
 4. **Flexibility**: It allows system administrators to implement policies that govern job priorities, system utilization, and resource allocation, providing a high degree of control over the system's operation.
-</div>
 
 <br> <!-- Blank line -->
 ## Why SLURM?
