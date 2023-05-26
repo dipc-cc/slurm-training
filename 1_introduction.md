@@ -30,6 +30,7 @@ In contrast, a workload manager automates these tasks and provides several signi
 4. **Flexibility**: It allows system administrators to implement policies that govern job priorities, system utilization, and resource allocation, providing a high degree of control over the system's operation.
 </div>
 
+<br> <!-- Blank line -->
 ## Why SLURM?
 
 <div align="justify">
