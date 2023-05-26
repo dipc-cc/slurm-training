@@ -24,14 +24,13 @@ Here I have the new usefull sbatch script examples.
     margin-bottom: 10px;
     color: #0085ff;
     cursor: pointer;
-    font-family: Arial, sans-serif; /* Set your desired regular font here */
+    font-family: inherit;
   }
 
   .info-box p {
     font-size: 16px;
     line-height: 1.5;
     color: #333;
-    font-family: Courier, monospace;
   }
 
   .info-box .content {
