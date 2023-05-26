@@ -114,6 +114,7 @@ echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
 <br>
     <code>#SBATCH --dependency="dependency_type"</code>
    <br>
+   <br>
     Available dependencies are:
    <br>
     - after
