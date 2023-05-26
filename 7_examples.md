@@ -117,9 +117,16 @@ echo "Instance index is ${SLURM_ARRAY_TASK_ID}."
    <br>
     Available dependencies are:
    <br>
-    - after
+    - <code>after:jobID</code> job starts when job with <code>jobID</code> begun execution.
    <br>
-    - afterany 
+    - <code>afterany:jobID</code> job starts when job with <code>jobID</code> terminates.
+   <br>
+    - <code>aferok:jobID</code> job starts when job with <code>jobID</code> terminates successfully.
+   <br>
+    - <code>afternook:jobID</code> job starts when job with <code>jobID</code> terminates with non-zero status.
+   <br>
+    - <code>singleton:jobID</code> jobs starts when any previously job with the same job name and user terminates. This can be used to chain restartable jobs.
+   
       <pre>
 #!/bin/bash
 #SBATCH --partition=regular
